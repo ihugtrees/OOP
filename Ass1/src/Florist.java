@@ -1,22 +1,25 @@
-public class Florist extends People {
 
-	/**
-	 * 
-	 * @param flowers
-	 * @param people
-	 */
-	public void orderFlowers(String flowers, People people) {
-		// TODO - implement Florist.orderFlowers
-		throw new UnsupportedOperationException();
-	}
+public class Florist extends Person {
 
-	/**
-	 * 
-	 * @param flowersBouqeut
-	 */
-	public void arrange(FlowersBouquet flowersBouqeut) {
-		// TODO - implement Florist.arrange
-		throw new UnsupportedOperationException();
-	}
+    Florist(String name) {
+        super(name);
+    }
+
+    /**
+     * @param flowers
+     * @param person
+     */
+    public void orderFlowers(String flowers, Person person) {
+        // TODO - implement Florist.orderFlowers
+        throw new UnsupportedOperationException();
+    }
+
+    /**
+     * @param flowersBouqeut
+     */
+    public void arrange(FlowersBouquet flowersBouqeut) {
+        // TODO - implement Florist.arrange
+        throw new UnsupportedOperationException();
+    }
 
 }
