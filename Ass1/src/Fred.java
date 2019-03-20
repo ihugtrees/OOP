@@ -1,5 +1,8 @@
-public class Fred extends Person {
+
+class Fred extends Person {
+
     Fred(String name) {
         super(name);
     }
+
 }

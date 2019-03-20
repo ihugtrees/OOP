@@ -11,17 +11,16 @@ public class Person {
     }
 
     /**
-     * @param flowers
-     * @param florist
-     * @param person
+     * @param flowers - flowers to be delivered
+     * @param person - the person to deliver to
      */
-    public void sendFlowers(String flowers, Florist florist, Person person) {
+    public void sendFlowers(String flowers, Person person) {
         // TODO - implement Person.sendFlowers
         throw new UnsupportedOperationException();
     }
 
     /**
-     * @param flowersBouquet
+     * @param flowersBouquet - the bouquet that has been received.
      */
     public void receiveFlowers(FlowersBouquet flowersBouquet) {
         // TODO - implement Person.receiveFlowers
