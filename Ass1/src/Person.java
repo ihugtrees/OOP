@@ -1,4 +1,5 @@
-public class Person {
+
+public abstract class Person {
 
     private String name;
 
@@ -6,25 +7,31 @@ public class Person {
         this.name = name;
     }
 
+    /**
+     * @return - persons name
+     */
     public String getName() {
         return this.name;
     }
 
     /**
      * @param flowers - flowers to be delivered
-     * @param person - the person to deliver to
      */
-    public void sendFlowers(String flowers, Person person) {
-        // TODO - implement Person.sendFlowers
-        throw new UnsupportedOperationException();
-    }
+    abstract void sendFlowers(String flowers);
 
     /**
-     * @param flowersBouquet - the bouquet that has been received.
+     * @param bouquet - bouquet to be delivered
+     * @param person  - the person to deliver to
      */
-    public void receiveFlowers(FlowersBouquet flowersBouquet) {
-        // TODO - implement Person.receiveFlowers
-        throw new UnsupportedOperationException();
-    }
+    abstract void sendBouquet(FlowersBouquet bouquet, Person person);
 
+    /**
+     * @param flowers - the flowers that has been received.
+     */
+    abstract void receiveFlowers(String flowers, Person sender);
+
+    /**
+     * @param bouquet - the bouquet that has been received.
+     */
+    abstract void receiveBouquet(FlowersBouquet bouquet, Person sender);
 }

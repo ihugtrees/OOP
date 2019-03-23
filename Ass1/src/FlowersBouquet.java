@@ -9,8 +9,15 @@ class FlowersBouquet {
         isArranged = false;
     }
 
-    public void arrangeBouquet() {
+    void arrangeBouquet() {
         isArranged = true;
     }
 
+    boolean isArranged(){
+        return isArranged;
+    }
+
+    String getFlowers() {
+        return flowers;
+    }
 }
