@@ -5,26 +5,15 @@ class Arranger extends Person {
         super(name);
     }
 
-    @Override
+
     void sendFlowers(String flowers) {
 
     }
-
-    @Override
-    void sendBouquet(FlowersBouquet bouquet, Person person) {
-        System.out.println(getName() + " returns arranged flowers to " + person.getName());
-        person.receiveBouquet(bouquet, this);
-    }
-
-    @Override
-    void receiveFlowers(String flowers, Person sender) {
-
-    }
-
-    @Override
-    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
+    FlowersBouquet arrange(FlowersBouquet flowersBouquet,Person sender){
         System.out.println(getName() + " arranges flowers");
-        bouquet.arrangeBouquet();
-        sendBouquet(bouquet, sender);
+        flowersBouquet.arrangeBouquet();
+        System.out.println(getName() + " returns arranged flowers to " + sender.getName());
+        return flowersBouquet;
+
     }
 }

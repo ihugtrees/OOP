@@ -1,41 +1,50 @@
 
 public class Florist extends Person {
 
-    private Person delivery;
-    private Person arranger;
-    private Person saler;
+    private DeliveryPerson delivery;
+    private Arranger arranger;
+    private Wholesaler saler;
 
-    Florist(String name) {
+    Florist(String name,DeliveryPerson deliveryPerson,Arranger arranger,Wholesaler wholesaler) {
         super(name);
-        delivery = new DeliveryPerson("Delivery Person");
-        arranger = new Arranger("Flower Arranger");
-        saler = new Wholesaler("Wholesaler");
+        this.delivery=deliveryPerson;
+        this.arranger = arranger;
+        this.saler = wholesaler;
     }
 
-    @Override
-    public void sendFlowers(String flowers) {
-        System.out.println(getName() + " forwards request to " + saler.getName());
-        saler.receiveFlowers(flowers, this);
-    }
 
-    @Override
-    void sendBouquet(FlowersBouquet bouquet, Person person) {
-        if (bouquet.isArranged()) {
-            System.out.println(getName() + " forwards flowers to " + delivery.getName());
-            delivery.receiveBouquet(bouquet, this);
-        } else {
+    public void sendFlowers(String flowers,Person to) {
+        if(to.getFlorist().equals(this)) {
+            System.out.println(getName() + " forwards request to " + saler.getName());
+            FlowersBouquet flowersBouquet = saler.receiveOrder(flowers,this);
             System.out.println(getName() + " request flowers arrangement from " + arranger.getName());
-            arranger.receiveBouquet(bouquet, this);
+            flowersBouquet = arranger.arrange(flowersBouquet,this);
+            System.out.println(getName() + " forwards flowers to " + delivery.getName());
+            delivery.sendBouquet(flowersBouquet, to);
+        }
+        else{
+            System.out.println(this.getName() + "forwards order to "+to.getFlorist().getName());
+            to.getFlorist().sendFlowers(flowers,to);
         }
     }
 
-    @Override
-    void receiveFlowers(String flowers, Person sender) {
-        sendFlowers(flowers);
-    }
-
-    @Override
-    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
-        sendBouquet(bouquet, arranger);
-    }
+//    void sendBouquet(FlowersBouquet bouquet, Person person) {
+//        if (bouquet.isArranged()) {
+//
+//            delivery.receiveBouquet(bouquet, this);
+//        } else {
+//
+//            arranger.receiveBouquet(bouquet, this);
+//        }
+//    }
+//
+//    @Override
+//    void receiveFlowers(String flowers, Person sender) {
+//        sendFlowers(flowers);
+//    }
+//
+//    @Override
+//    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
+//        sendBouquet(bouquet, arranger);
+//    }
 }

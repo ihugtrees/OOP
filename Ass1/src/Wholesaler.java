@@ -1,34 +1,36 @@
 
 class Wholesaler extends Person {
 
-    private Person grower;
-    private Person florist;
+    private Grower grower;
 
-    Wholesaler(String name) {
+
+    Wholesaler(String name, Grower grower) {
         super(name);
-        grower = new Grower("Grower");
+        this.grower = grower;
     }
 
-    @Override
-    void sendFlowers(String flowers) {
+
+    FlowersBouquet receiveOrder(String flowers, Person sender) {
         System.out.println(getName() + " forwards request to " + grower.getName());
-        grower.receiveFlowers(flowers, this);
+        FlowersBouquet flowersBouquet = grower.receiveOrder(flowers, this);
+        System.out.println(getName() + " returns flowers to " + sender.getName());
+        return flowersBouquet;
     }
 
-    @Override
-    void sendBouquet(FlowersBouquet bouquet, Person person) {
-        System.out.println(getName() + " returns flowers to " + florist.getName());
-        florist.receiveBouquet(bouquet, this);
-    }
-
-    @Override
-    void receiveFlowers(String flowers, Person sender) {
-        florist = sender;
-        sendFlowers(flowers);
-    }
-
-    @Override
-    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
-        sendBouquet(bouquet, florist);
-    }
+//    @Override
+//    void sendBouquet(FlowersBouquet bouquet, Person person) {
+//
+//        florist.receiveBouquet(bouquet, this);
+//    }
+//
+//    @Override
+//    void receiveFlowers(String flowers, Person sender) {
+//        florist = sender;
+//        sendFlowers(flowers);
+//    }
+//
+//    @Override
+//    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
+//        sendBouquet(bouquet, florist);
+//    }
 }

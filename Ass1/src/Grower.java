@@ -1,34 +1,36 @@
 
 class Grower extends Person {
 
-    private Person gardener;
-    private Person saler;
+    private Gardner gardener;
 
-    Grower(String name) {
+
+    Grower(String name,Gardner gardener) {
         super(name);
-        gardener = new Gardner("Gardener");
+        this.gardener = gardener;
     }
 
-    @Override
-    void sendFlowers(String flowers) {
+
+    FlowersBouquet receiveOrder(String flowers,Person sender) {
         System.out.println(getName()+ " forwards request to " + gardener.getName());
-        gardener.receiveFlowers(flowers,this);
+        FlowersBouquet flowersBouquet =  gardener.processOrder(flowers,this);
+        System.out.println(getName() + " returns flowers to " + sender.getName());
+        return flowersBouquet;
     }
 
-    @Override
-    void sendBouquet(FlowersBouquet bouquet, Person person) {
-        System.out.println(getName() + " returns flowers to " + saler.getName());
-        saler.receiveBouquet(bouquet,this);
-    }
-
-    @Override
-    void receiveFlowers(String flowers, Person sender) {
-        saler = sender;
-        sendFlowers(flowers);
-    }
-
-    @Override
-    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
-        sendBouquet(bouquet,saler);
-    }
+//
+//    void sendBouquet(FlowersBouquet bouquet, Person person) {
+//
+//        saler.receiveBouquet(bouquet,this);
+//    }
+//
+//
+//    void receiveFlowers(String flowers, Person sender) {
+//        saler = sender;
+//        sendFlowers(flowers);
+//    }
+//
+//    @Override
+//    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
+//        sendBouquet(bouquet,saler);
+//    }
 }
