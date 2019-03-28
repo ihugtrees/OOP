@@ -1,23 +1,24 @@
+package Flowers;
 
-class FlowersBouquet {
+public class FlowersBouquet {
 
     private String flowers;
     private boolean isArranged;
 
-    FlowersBouquet(String flowers) {
+    public FlowersBouquet(String flowers) {
         this.flowers = flowers;
         isArranged = false;
     }
 
-    void arrangeBouquet() {
+    public void arrangeBouquet() {
         isArranged = true;
     }
 
-    boolean isArranged(){
+    public boolean isArranged(){
         return isArranged;
     }
 
-    String getFlowers() {
+    public String getFlowers() {
         return flowers;
     }
 }

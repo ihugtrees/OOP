@@ -1,3 +1,6 @@
+package Humans;
+
+import Flowers.FlowersBouquet;
 
 public class Florist extends Person {
 
@@ -5,7 +8,7 @@ public class Florist extends Person {
     private Arranger arranger;
     private Wholesaler saler;
 
-    Florist(String name,DeliveryPerson deliveryPerson,Arranger arranger,Wholesaler wholesaler) {
+    public Florist(String name, DeliveryPerson deliveryPerson, Arranger arranger, Wholesaler wholesaler) {
         super(name);
         this.delivery=deliveryPerson;
         this.arranger = arranger;
@@ -23,28 +26,8 @@ public class Florist extends Person {
             delivery.sendBouquet(flowersBouquet, to);
         }
         else{
-            System.out.println(this.getName() + "forwards order to "+to.getFlorist().getName());
-            to.getFlorist().sendFlowers(flowers,to);
+            System.out.println(this.getName() + " forwards order to "+to.getFlorist().getName());
+            to.sendFlowers(flowers,to);
         }
     }
-
-//    void sendBouquet(FlowersBouquet bouquet, Person person) {
-//        if (bouquet.isArranged()) {
-//
-//            delivery.receiveBouquet(bouquet, this);
-//        } else {
-//
-//            arranger.receiveBouquet(bouquet, this);
-//        }
-//    }
-//
-//    @Override
-//    void receiveFlowers(String flowers, Person sender) {
-//        sendFlowers(flowers);
-//    }
-//
-//    @Override
-//    void receiveBouquet(FlowersBouquet bouquet, Person sender) {
-//        sendBouquet(bouquet, arranger);
-//    }
 }
