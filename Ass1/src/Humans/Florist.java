@@ -26,8 +26,8 @@ public class Florist extends Person {
             delivery.sendBouquet(flowersBouquet, to);
         }
         else{
-            System.out.println(this.getName() + " forwards order to "+to.getFlorist().getName());
-            to.sendFlowers(flowers,to);
+            System.out.println(getName() + " forwards order to "+to.getFlorist().getName());
+            to.getFlorist().sendFlowers(flowers,to);
         }
     }
 }
