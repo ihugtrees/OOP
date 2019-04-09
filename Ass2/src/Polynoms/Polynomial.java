@@ -2,12 +2,29 @@ package Polynoms;
 
 import Numbers.Scalar;
 
-public interface Polynomial {
+public class Polynomial implements PolynomialInterface {
+    @Override
+    public PolynomialInterface add(PolynomialInterface poly) {
+        return null;
+    }
 
-    Polynomial add(Polynomial poly);
-    Polynomial mul(Polynomial poly);
-    Scalar evaluate(Scalar scalar);
-    Polynomial derivate();
-    String toString();
-    boolean equals(Polynomial poly);
+    @Override
+    public PolynomialInterface mul(PolynomialInterface poly) {
+        return null;
+    }
+
+    @Override
+    public Scalar evaluate(Scalar scalar) {
+        return null;
+    }
+
+    @Override
+    public PolynomialInterface derivate() {
+        return null;
+    }
+
+    @Override
+    public boolean equals(PolynomialInterface poly) {
+        return false;
+    }
 }
