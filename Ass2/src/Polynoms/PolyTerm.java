@@ -64,17 +64,25 @@ public class PolyTerm implements PolyTermInterface, Comparable {
     }
 
     @Override
-    public PolyTerm derivate() {
+    public PolyTerm derivate() {//todo: complete??
+
+        if(_exp == 0){
+            _coeff.
+            return this;
+        }
+        _coeff.mul();
+        _exp--;
         return null;
     }
 
     @Override
     public boolean equals(PolyTerm pt) {
-        return false;
+        return _exp == pt._exp && _coeff.equals(pt._coeff);
     }
 
     @Override
     public int compareTo(Object o) {
-        return 0;
+        PolyTerm p = (PolyTerm) o;
+        return Integer.compare(_exp, p._exp);
     }
 }
