@@ -4,10 +4,15 @@ import Numbers.Scalar;
 
 public interface PolynomialInterface {
 
-    PolynomialInterface add(PolynomialInterface poly);
-    PolynomialInterface mul(PolynomialInterface poly);
+    Polynomial add(Polynomial poly);
+
+    Polynomial mul(Polynomial poly);
+
     Scalar evaluate(Scalar scalar);
-    PolynomialInterface derivate();
+
+    Polynomial derivate();
+
     String toString();
-    boolean equals(PolynomialInterface poly);
+
+    boolean equals(Polynomial poly);
 }

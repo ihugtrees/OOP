@@ -1,30 +1,75 @@
 package Polynoms;
 
+import Numbers.RationalScalar;
+import Numbers.RealScalar;
 import Numbers.Scalar;
 
+import java.util.List;
+
 public class Polynomial implements PolynomialInterface {
-    @Override
-    public PolynomialInterface add(PolynomialInterface poly) {
-        return null;
+
+    private List<PolyTerm> polinom;
+    private boolean isQ;
+
+    public Polynomial(List<PolyTerm> poly, boolean isQ) {
+        polinom = poly;
+        this.isQ = isQ;
+    }
+
+    public List<PolyTerm> getPolinom() {
+        return polinom;
     }
 
     @Override
-    public PolynomialInterface mul(PolynomialInterface poly) {
-        return null;
+    public Polynomial add(Polynomial poly) {
+        List<PolyTerm> terms = poly.getPolinom();
+        for (PolyTerm term : terms) {
+            for (PolyTerm term1 : polinom)
+                if (term.canAdd(term1))
+                    term.add(term1);
+        }
+        return this;
     }
 
     @Override
-    public Scalar evaluate(Scalar scalar) {
-        return null;
+    public Polynomial mul(Polynomial poly) {
+        List<PolyTerm> terms = poly.getPolinom();
+        for (PolyTerm term : terms) {
+            for (PolyTerm term1 : polinom)
+                term.mul(term1);
+        }
+        return this;
     }
 
     @Override
-    public PolynomialInterface derivate() {
-        return null;
+    public Scalar evaluate(Scalar scalar) {//todo: howw
+        Scalar s;
+        if (isQ)
+            s = RationalScalar.getReational(0, 1);
+        else
+            s = RealScalar.getReal(0, 0);
+
+        for (PolyTerm term : polinom)
+            s.add(term.evaluate(scalar));
+
+        return s;
     }
 
     @Override
-    public boolean equals(PolynomialInterface poly) {
-        return false;
+    public Polynomial derivate() {
+        for (PolyTerm term : polinom)
+            term.derivate();
+        return this;
+    }
+
+    @Override
+    public boolean equals(Polynomial poly) {
+        List<PolyTerm> terms = poly.getPolinom();
+
+        for (PolyTerm term : terms)
+            for (PolyTerm term1 : polinom)
+                if (!term.equals(term1))
+                    return false;
+        return true;
     }
 }

@@ -81,6 +81,12 @@ public class RealScalar implements Scalar {
         return false;
     }
 
+    @Override
+    public Scalar mulByInt(int num) {
+        _value = _value * num;
+        return this;
+    }
+
     public String toString() {//todo:check thiss
         if (_value == (int) _value)
             return ""+(int)_value;

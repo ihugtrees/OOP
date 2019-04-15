@@ -2,10 +2,13 @@ package Polynoms;
 
 import Numbers.Scalar;
 
+import java.text.DecimalFormat;
+
 public class PolyTerm implements PolyTermInterface, Comparable {
 
     private Scalar _coeff;
     private int _exp;
+    private boolean isQ=false;
 
     public static PolyTerm getPolyTerm(int exp, Scalar coeff) {
         if (exp >= 0) {
@@ -49,13 +52,12 @@ public class PolyTerm implements PolyTermInterface, Comparable {
     public PolyTerm mul(PolyTerm pt) {
         Scalar newScalar = _coeff.mul(pt.get_coeff());
         int newExp = _exp + pt.get_exp();
-        PolyTerm newPolyTerm = PolyTerm.getPolyTerm(newExp, newScalar);
-        return newPolyTerm;
+        return PolyTerm.getPolyTerm(newExp, newScalar);
     }
 
     @Override
     public Scalar evaluate(Scalar scalar) {
-        if (_exp > 0) {
+        if (_exp > 1) {
             scalar.pow(_exp);
             scalar.mul(_coeff);
             return scalar;
@@ -64,15 +66,15 @@ public class PolyTerm implements PolyTermInterface, Comparable {
     }
 
     @Override
-    public PolyTerm derivate() {//todo: complete??
+    public PolyTerm derivate() {
 
         if(_exp == 0){
-            _coeff.
+            _coeff.mulByInt(0);
             return this;
         }
-        _coeff.mul();
+        _coeff.mulByInt(_exp);
         _exp--;
-        return null;
+        return this;
     }
 
     @Override
@@ -85,4 +87,10 @@ public class PolyTerm implements PolyTermInterface, Comparable {
         PolyTerm p = (PolyTerm) o;
         return Integer.compare(_exp, p._exp);
     }
+    public String toString() {//todo:check thiss
+        if (_exp == 0)
+            return _coeff.toString();
+        return _coeff.toString()+"x^"+_exp;
+    }
+
 }

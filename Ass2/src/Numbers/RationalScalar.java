@@ -117,10 +117,16 @@ public class RationalScalar implements Scalar {
         return false;
     }
 
+    @Override
+    public Scalar mulByInt(int num) {
+        up = up * num;
+        return this;
+    }
+
     public String toString() {
         if (down == 1)
             return ""+up;
 
-        return "" + up + "/" + down;
+        return up + "/" + down;
     }
 }
