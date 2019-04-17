@@ -13,4 +13,6 @@ public interface Scalar {
     boolean equals(Scalar s);
 
     Scalar mulByInt(int num);
+
+    boolean isZero();
 }

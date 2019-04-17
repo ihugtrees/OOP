@@ -2,38 +2,36 @@ package Polynoms;
 
 import Numbers.Scalar;
 
-import java.text.DecimalFormat;
+public class PolyTerm implements PolyTermInterface, Comparable<PolyTerm> {
 
-public class PolyTerm implements PolyTermInterface, Comparable {
+    private Scalar scalar;
+    private int exponent;
 
-    private Scalar _coeff;
-    private int _exp;
-    private boolean isQ=false;
-
-    public static PolyTerm getPolyTerm(int exp, Scalar coeff) {
+    public static PolyTerm createPolyTerm(Scalar scalar, int exp) {
         if (exp >= 0) {
-            return new PolyTerm(exp, coeff);
+            return new PolyTerm(scalar, exp);
         }
+        System.out.println("Exponent can't be negative");
         return null;
     }
 
-    private PolyTerm(int exp, Scalar coeff) {
-        _exp = exp;
-        _coeff = coeff;
+    private PolyTerm(Scalar scalar, int exp) {
+        this.scalar = scalar;
+        exponent = exp;
     }
 
 
-    public Scalar get_coeff() {
-        return _coeff;
+    public Scalar getScalar() {
+        return scalar;
     }
 
-    public int get_exp() {
-        return _exp;
+    public int getExponent() {
+        return exponent;
     }
 
     @Override
     public boolean canAdd(PolyTerm pt) {
-        if (_exp == pt.get_exp()) {
+        if (exponent == pt.getExponent()) {
             return true;
         }
         return false;
@@ -42,7 +40,7 @@ public class PolyTerm implements PolyTermInterface, Comparable {
     @Override
     public PolyTerm add(PolyTerm pt) {
         if (canAdd(pt)) {
-            _coeff.add(pt.get_coeff());
+            scalar.add(pt.getScalar());
             return this;
         }
         return null;
@@ -50,47 +48,45 @@ public class PolyTerm implements PolyTermInterface, Comparable {
 
     @Override
     public PolyTerm mul(PolyTerm pt) {
-        Scalar newScalar = _coeff.mul(pt.get_coeff());
-        int newExp = _exp + pt.get_exp();
-        return PolyTerm.getPolyTerm(newExp, newScalar);
+        scalar.mul(pt.getScalar());
+        exponent += pt.getExponent();
+        return this;
     }
 
     @Override
     public Scalar evaluate(Scalar scalar) {
-        if (_exp > 1) {
-            scalar.pow(_exp);
-            scalar.mul(_coeff);
-            return scalar;
-        }
-        return _coeff;
+        if (exponent == 0)
+            return this.scalar;
+
+        scalar.pow(exponent);
+        scalar.mul(this.scalar);
+        return scalar;
     }
 
     @Override
     public PolyTerm derivate() {
-
-        if(_exp == 0){
-            _coeff.mulByInt(0);
+        if (exponent == 0) {
+            scalar.mulByInt(0);
             return this;
         }
-        _coeff.mulByInt(_exp);
-        _exp--;
+        scalar.mulByInt(exponent);
+        exponent--;
         return this;
     }
 
     @Override
     public boolean equals(PolyTerm pt) {
-        return _exp == pt._exp && _coeff.equals(pt._coeff);
+        return exponent == pt.exponent && scalar.equals(pt.scalar);
+    }
+
+    public String toString() {
+        if (exponent == 0)
+            return scalar.toString();
+        return scalar.toString() + "x^" + exponent;
     }
 
     @Override
-    public int compareTo(Object o) {
-        PolyTerm p = (PolyTerm) o;
-        return Integer.compare(_exp, p._exp);
+    public int compareTo(PolyTerm p) {
+        return Integer.compare(exponent, p.exponent);
     }
-    public String toString() {//todo:check thiss
-        if (_exp == 0)
-            return _coeff.toString();
-        return _coeff.toString()+"x^"+_exp;
-    }
-
 }

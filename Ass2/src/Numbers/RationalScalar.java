@@ -5,7 +5,7 @@ public class RationalScalar implements Scalar {
     private int up;
     private int down;
 
-    public static Scalar getReational(int up, int down) {
+    public static Scalar createRational(int up, int down) {
         if (down != 0) {
             int divider = largestDivider(up, down);
             return new RationalScalar(up / divider, down / divider);
@@ -50,32 +50,26 @@ public class RationalScalar implements Scalar {
 
     @Override
     public Scalar add(Scalar s) {
-        if (s instanceof RationalScalar) {
-            int upByOtherDown = up * ((RationalScalar) s).getDown();
-            int downByOtherUp = down * ((RationalScalar) s).getUp();
-            int sumOfTop = upByOtherDown + downByOtherUp;
-            int downByDown = down * ((RationalScalar) s).getDown();
-            int divider = largestDivider(sumOfTop, downByDown);
-            up = sumOfTop / divider;
-            down = downByDown / divider;
-            checkIfDownNegative();
-            return this;
-        }
-        return null;
+        int upByOtherDown = up * ((RationalScalar) s).getDown();
+        int downByOtherUp = down * ((RationalScalar) s).getUp();
+        int sumOfTop = upByOtherDown + downByOtherUp;
+        int downByDown = down * ((RationalScalar) s).getDown();
+        int divider = largestDivider(sumOfTop, downByDown);
+        up = sumOfTop / divider;
+        down = downByDown / divider;
+        checkIfDownNegative();
+        return this;
     }
 
     @Override
     public Scalar mul(Scalar s) {
-        if (s instanceof RationalScalar) {
-            up = up * ((RationalScalar) s).getUp();
-            down = down * ((RationalScalar) s).getDown();
-            int divider = largestDivider(up, down);
-            up = up / divider;
-            down = down / divider;
-            checkIfDownNegative();
-            return this;
-        }
-        return null;
+        up = up * ((RationalScalar) s).getUp();
+        down = down * ((RationalScalar) s).getDown();
+        int divider = largestDivider(up, down);
+        up = up / divider;
+        down = down / divider;
+        checkIfDownNegative();
+        return this;
     }
 
     @Override
@@ -111,10 +105,7 @@ public class RationalScalar implements Scalar {
 
     @Override
     public boolean equals(Scalar s) {
-        if (s instanceof RationalScalar) {
-            return up == ((RationalScalar) s).getUp() && down == ((RationalScalar) s).getDown();
-        }
-        return false;
+        return up == ((RationalScalar) s).getUp() && down == ((RationalScalar) s).getDown();
     }
 
     @Override
@@ -123,9 +114,14 @@ public class RationalScalar implements Scalar {
         return this;
     }
 
+    @Override
+    public boolean isZero() {
+        return up == 0;
+    }
+
     public String toString() {
         if (down == 1)
-            return ""+up;
+            return "" + up;
 
         return up + "/" + down;
     }

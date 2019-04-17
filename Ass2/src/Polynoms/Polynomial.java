@@ -4,6 +4,7 @@ import Numbers.RationalScalar;
 import Numbers.RealScalar;
 import Numbers.Scalar;
 
+import java.util.Collections;
 import java.util.List;
 
 public class Polynomial implements PolynomialInterface {
@@ -13,6 +14,8 @@ public class Polynomial implements PolynomialInterface {
 
     public Polynomial(List<PolyTerm> poly, boolean isQ) {
         polinom = poly;
+        Collections.sort(polinom);
+
         this.isQ = isQ;
     }
 
@@ -28,6 +31,7 @@ public class Polynomial implements PolynomialInterface {
                 if (term.canAdd(term1))
                     term.add(term1);
         }
+        checkZeroes();
         return this;
     }
 
@@ -38,16 +42,19 @@ public class Polynomial implements PolynomialInterface {
             for (PolyTerm term1 : polinom)
                 term.mul(term1);
         }
+        checkZeroes();
         return this;
     }
 
     @Override
     public Scalar evaluate(Scalar scalar) {//todo: howw
         Scalar s;
-        if (isQ)
-            s = RationalScalar.getReational(0, 1);
+
+        if(isQ)
+            s = RationalScalar.createRational(0,1);
+
         else
-            s = RealScalar.getReal(0, 0);
+            s = new RealScalar(0);
 
         for (PolyTerm term : polinom)
             s.add(term.evaluate(scalar));
@@ -59,6 +66,7 @@ public class Polynomial implements PolynomialInterface {
     public Polynomial derivate() {
         for (PolyTerm term : polinom)
             term.derivate();
+        checkZeroes();
         return this;
     }
 
@@ -71,5 +79,11 @@ public class Polynomial implements PolynomialInterface {
                 if (!term.equals(term1))
                     return false;
         return true;
+    }
+
+    private void checkZeroes(){
+        for (PolyTerm term : polinom)
+            if(term.getExponent() == 0 && term.getScalar().isZero())
+                polinom.remove(term);
     }
 }
