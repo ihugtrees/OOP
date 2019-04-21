@@ -15,4 +15,6 @@ public interface Scalar {
     Scalar mulByInt(int num);
 
     boolean isZero();
+
+    boolean isNegetive();
 }

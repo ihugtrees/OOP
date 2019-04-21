@@ -75,10 +75,16 @@ public class RealScalar implements Scalar {
         return num == 0.0;
     }
 
-    public String toString() {//todo:check thiss
-        if (num == (int) num)
-            return "" + (int) num;
+    @Override
+    public boolean isNegetive() {
+        return num<0;
+    }
 
-        return "" + Double.parseDouble(new DecimalFormat("###.000").format(num));
+    public String toString() {//todo:check thiss
+        String s = "";
+        if (num == (int) num)
+            return s + (int) num;
+
+        return s + Double.parseDouble(new DecimalFormat("###.000").format(num));
     }
 }

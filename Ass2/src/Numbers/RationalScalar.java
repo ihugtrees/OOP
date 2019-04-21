@@ -5,7 +5,7 @@ public class RationalScalar implements Scalar {
     private int up;
     private int down;
 
-    public static Scalar createRational(int up, int down) {
+    public static RationalScalar createRational(int up, int down) {
         if (down != 0) {
             int divider = largestDivider(up, down);
             return new RationalScalar(up / divider, down / divider);
@@ -49,7 +49,7 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public Scalar add(Scalar s) {
+    public Scalar add(Scalar s) {//TODO: working
         int upByOtherDown = up * ((RationalScalar) s).getDown();
         int downByOtherUp = down * ((RationalScalar) s).getUp();
         int sumOfTop = upByOtherDown + downByOtherUp;
@@ -119,10 +119,17 @@ public class RationalScalar implements Scalar {
         return up == 0;
     }
 
-    public String toString() {
-        if (down == 1)
-            return "" + up;
+    @Override
+    public boolean isNegetive() {
+        return down < 0 || up < 0;
+    }
 
-        return up + "/" + down;
+    @Override
+    public String toString() {
+        String s = "";
+        if (down == 1)
+            return s + up;
+
+        return s + up + "/" + down;
     }
 }

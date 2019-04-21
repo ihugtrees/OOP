@@ -32,7 +32,7 @@ public class Polynomial implements PolynomialInterface {
                     term.add(term1);
         }
         checkZeroes();
-        return this;
+        return poly;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Polynomial implements PolynomialInterface {
                 term.mul(term1);
         }
         checkZeroes();
-        return this;
+        return poly;
     }
 
     @Override
