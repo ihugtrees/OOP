@@ -31,7 +31,10 @@ public class Parser {
      */
     private void arrangeMinuses(String[] strPolynoms) {
         for (int i = 0; i < strPolynoms.length; i++) {
-            strPolynoms[i] = strPolynoms[i].replaceAll("-", "+-");
+            if(strPolynoms[i].charAt(0) == '-')
+                strPolynoms[i] = strPolynoms[i].charAt(0) + strPolynoms[i].substring(1).replaceAll("-", "+-");
+            else
+                strPolynoms[i] = strPolynoms[i].replaceAll("-", "+-");
         }
     }
 
@@ -67,7 +70,7 @@ public class Parser {
 
         for (PolyTerm polyTerm: polyTermList) {
             if (polyTerm.getScalar().isNegetive()) {
-                s += "-" + polyTerm.toString();
+                s +=  polyTerm.toString();
                 isFirst = false;
             }
             else if(isFirst) {
