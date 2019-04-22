@@ -1,3 +1,5 @@
+package Utilities;
+
 import Numbers.RationalScalar;
 import Numbers.RealScalar;
 import Numbers.Scalar;
