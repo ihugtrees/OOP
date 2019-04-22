@@ -29,28 +29,24 @@ public class RealScalar implements Scalar {
 
     @Override
     public Scalar mul(Scalar s) {
-        num = ((RealScalar) s).getNum() * num;
-        checkZero();
-        return this;
+        return new RealScalar(((RealScalar) s).getNum() * num);
     }
 
     @Override
     public Scalar pow(int exponent) {
-        if (exponent == 0) {
-            num = 1;
-            return this;
-        }
+        double tempNum = num;
+        if (exponent == 0)
+            return new RealScalar(1);
 
-        for (int i = 0; i < exponent; i++) {
-            num = num * num;
-        }
-        checkZero();
-        if (exponent > 0)
-            return this;
+        for (int i = 1; i < exponent; i++)
+            tempNum = num * num;
 
-        num = 1 / num;
         checkZero();
-        return this;
+        if (exponent < 0)
+            num = 1 / num;
+
+        checkZero();
+        return new RealScalar(tempNum);
     }
 
     @Override
@@ -77,7 +73,7 @@ public class RealScalar implements Scalar {
 
     @Override
     public boolean isNegetive() {
-        return num<0;
+        return num < 0;
     }
 
     public String toString() {//todo:check thiss

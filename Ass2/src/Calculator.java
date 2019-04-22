@@ -6,56 +6,57 @@ import java.util.Scanner;
 public class Calculator {
 
     private static Scanner input = new Scanner(System.in);
-    private enum POLYNOMIAL_CASES {Addition, Multiplication, Evaluation, Derivate};
+
+    private enum POLYNOMIAL_CASES {Addition, Multiplication, Evaluation, Derivate}
+
     static Parser _parser;
 
     public static void main(String[] args) {
 
-        int mathChoice;
+        String mathChoice;
         String field;
         _parser = new Parser();
 
         System.out.println("Welcome to polynomial calculator\n");
         mathMenu();
-        mathChoice = input.nextInt();
-        while (mathChoice != 5){
+        mathChoice = input.next();
+        while (!mathChoice.equals("5")) {
             System.out.println("Please select the scalar field");
             field = input.next();
-            operationCases(mathChoice, field);
+            field.toLowerCase();
+            if (field.equals("q") || field.equals("r")) {
+                operationCases(mathChoice, field);
+            }else
+                System.out.println("Invalid field");
             mathMenu();
-            mathChoice = input.nextInt();
+            mathChoice = input.next();
         }
         input.close();
     }
 
-    private static void initPrints(String additionPrint, String derivatePrint) {
-        additionPrint = "The solution is:";
-        derivatePrint = "The derivative polynomial is:";
-    }
-
-    private static void operationCases(int mathChoice, String field) {
+    private static void operationCases(String mathChoice, String field) {
         switch (mathChoice) {
-            case 1: {                         //add
+            case "1": {                         //add
                 String ans = operations(POLYNOMIAL_CASES.Addition, field);
                 answerPrinter(POLYNOMIAL_CASES.Addition, ans);
                 break;
             }
-            case 2: {                           //mul
+            case "2": {                           //mul
                 String ans = operations(POLYNOMIAL_CASES.Multiplication, field);
                 answerPrinter(POLYNOMIAL_CASES.Multiplication, ans);
                 break;
             }
-            case 3: {                            //evaluate
+            case "3": {                            //evaluate
                 String ans = operations(POLYNOMIAL_CASES.Evaluation, field);
                 answerPrinter(POLYNOMIAL_CASES.Evaluation, ans);
                 break;
             }
-            case 4: {                            //derivate
+            case "4": {                            //derivate
                 String ans = operations(POLYNOMIAL_CASES.Derivate, field);
                 answerPrinter(POLYNOMIAL_CASES.Derivate, ans);
                 break;
             }
-            case 5:{
+            case "5": {
                 break;
             }
             default: {
@@ -71,10 +72,10 @@ public class Calculator {
 
     private static String operations(POLYNOMIAL_CASES action, String field) {
         String ans = "";
-        String strPolynoms[];
+        String[] strPolynoms;
         Polynomial[] polynomials;
         System.out.println("You have selected to do: " + action.toString());
-        switch(action){
+        switch (action) {
             case Addition://TODO: working :)
                 strPolynoms = getPolyStrFromUser(2);
                 polynomials = _parser.convertStrToPoly(strPolynoms, field);
@@ -82,14 +83,14 @@ public class Calculator {
                 ans = _parser.convertPolyToStr(addPoly, "The solution is:");
                 break;
 
-            case Multiplication://TODO: not working
+            case Multiplication://TODO: working :)
                 strPolynoms = getPolyStrFromUser(2);
                 polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial multPoly = polynomials[0].mul(polynomials[1]);
                 ans = _parser.convertPolyToStr(multPoly, "The solution is:");
                 break;
 
-            case Evaluation://TODO: not working
+            case Evaluation://TODO: working :)
                 strPolynoms = getPolyStrFromUser(1);
                 polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Scalar scalar = getScalar(field);
@@ -97,7 +98,7 @@ public class Calculator {
                 ans = _parser.convertScalarToStr(evalPoly, "The solution is:");
                 break;
 
-            case Derivate://TODO: not working
+            case Derivate://TODO: empty polinom
                 strPolynoms = getPolyStrFromUser(1);
                 polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial derivPoly = polynomials[0].derivate();
@@ -108,6 +109,7 @@ public class Calculator {
 
     /**
      * Get polynoms from the user according to the operation to be execute
+     *
      * @param numOfPolys - the number of the polynoms to get from the user
      * @return - array of polynoms, later to be parsed
      */
@@ -117,7 +119,7 @@ public class Calculator {
         System.out.println("Input the first polynom: ");
         polynoms[0] = input.nextLine();
 
-        if(numOfPolys > 1){
+        if (numOfPolys > 1) {
 
             System.out.println("Input the second polynom: ");
             polynoms[1] = input.nextLine();
@@ -128,6 +130,7 @@ public class Calculator {
 
     /**
      * According to the field, returns the scalar, Rational|Real
+     *
      * @param field - The field of the scalar
      * @return scalar - The scalar after converted from string
      */
@@ -135,10 +138,9 @@ public class Calculator {
         System.out.println("Please insert the scalar");
         String strScalar = input.nextLine();
         Scalar scalar;
-        if(field.equals("Q") || field.equals("q")){
+        if (field.equals("Q") || field.equals("q")) {
             scalar = _parser.convertStrToRational(strScalar);
-        }
-        else{
+        } else {
             scalar = _parser.convertStrToReal(strScalar);
         }
         return scalar;

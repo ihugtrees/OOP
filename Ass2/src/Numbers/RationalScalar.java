@@ -6,8 +6,10 @@ public class RationalScalar implements Scalar {
     private int down;
 
     public static RationalScalar createRational(int up, int down) {
+        int divider = 1;
         if (down != 0) {
-            int divider = largestDivider(up, down);
+            if (up != 0)
+                divider = largestDivider(up, down);
             return new RationalScalar(up / divider, down / divider);
         }
         System.out.println("Denominator can't be 0");
@@ -69,31 +71,30 @@ public class RationalScalar implements Scalar {
         up = up / divider;
         down = down / divider;
         checkIfDownNegative();
-        return this;
+        return RationalScalar.createRational(up, down);
     }
 
     @Override
     public Scalar pow(int exponent) {
-        if (exponent == 0) {
-            up = 1;
-            down = 1;
-            return this;
+        int tempUp = up;
+        int tempDown = down;
+
+        if (exponent == 0)
+            return RationalScalar.createRational(1, 1);
+
+
+        for (int i = 1; i < exponent; i++) {
+            tempUp = up * up;
+            tempDown = down * down;
         }
 
-        for (int i = 0; i < exponent; i++) {
-            up = up * up;
-            down = down * down;
+        if (exponent < 0) {
+            int temp = tempUp;
+            tempUp = tempDown;
+            tempDown = temp;
+            checkIfDownNegative();
         }
-
-        if (exponent > 0)
-            return this;
-
-        int temp = up;
-        up = down;
-        down = temp;
-        checkIfDownNegative();
-
-        return this;
+        return RationalScalar.createRational(tempUp, tempDown);
     }
 
     @Override

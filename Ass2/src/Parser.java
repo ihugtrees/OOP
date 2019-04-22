@@ -8,9 +8,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Parser {
-    public Parser() {
-
-    }
 
     /**
      * Given array of strings that represent polynoms and field, creates array of polynoms according to the specific field
@@ -170,8 +167,8 @@ public class Parser {
             PolyTerm polyTerm = PolyTerm.createPolyTerm(scalar, exp);
             polyTerms.add(polyTerm);
         }
-        Polynomial polynomial = new Polynomial(polyTerms, true);
-        return polynomial;
+        boolean q = field.equals("q") || field.equals("Q");
+        return new Polynomial(polyTerms, q);
     }
 
     /**
