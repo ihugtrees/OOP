@@ -50,7 +50,7 @@ public class PolyTerm implements PolyTermInterface, Comparable<PolyTerm> {
     public PolyTerm mul(PolyTerm pt) {
         Scalar sc = scalar.mul(pt.getScalar());
         int exp = exponent + pt.getExponent();
-        return PolyTerm.createPolyTerm(sc,exp);
+        return PolyTerm.createPolyTerm(sc, exp);
     }
 
     @Override
@@ -81,6 +81,10 @@ public class PolyTerm implements PolyTermInterface, Comparable<PolyTerm> {
     public String toString() {
         if (exponent == 0)
             return scalar.toString();
+
+        if (exponent == 1)
+            return scalar.toString() + "x";
+
         return scalar.toString() + "x^" + exponent;
     }
 

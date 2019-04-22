@@ -37,34 +37,34 @@ public class Calculator {
     }
 
     private static void operationCases(String mathChoice, String field) {
-        String[] strPolinoms;
+        String[] strPolynoms;
         Polynomial[] polynomials;
         switch (mathChoice) {
             case "1": {
-                strPolinoms = getPolyStrFromUser(2);
-                polynomials = _parser.convertStrToPoly(strPolinoms, field);
+                strPolynoms = getPolyStrFromUser(2);
+                polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial addPoly = polynomials[0].add(polynomials[1]);
                 System.out.println(_parser.convertPolyToStr(addPoly, "The solution is:"));
                 break;
             }
             case "2": {
-                strPolinoms = getPolyStrFromUser(2);
-                polynomials = _parser.convertStrToPoly(strPolinoms, field);
+                strPolynoms = getPolyStrFromUser(2);
+                polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial multPoly = polynomials[0].mul(polynomials[1]);
                 System.out.println(_parser.convertPolyToStr(multPoly, "The solution is:"));
                 break;
             }
             case "3": {
-                strPolinoms = getPolyStrFromUser(1);
-                polynomials = _parser.convertStrToPoly(strPolinoms, field);
+                strPolynoms = getPolyStrFromUser(1);
+                polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Scalar scalar = getScalar(field);
                 Scalar evalPoly = polynomials[0].evaluate(scalar);
                 System.out.println(_parser.convertScalarToStr(evalPoly, "The solution is:"));
                 break;
             }
             case "4": {
-                strPolinoms = getPolyStrFromUser(1);
-                polynomials = _parser.convertStrToPoly(strPolinoms, field);
+                strPolynoms = getPolyStrFromUser(1);
+                polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial derivPoly = polynomials[0].derivate();
                 System.out.println(_parser.convertPolyToStr(derivPoly, "The derivative polynomial is:"));
                 break;
@@ -85,17 +85,17 @@ public class Calculator {
      */
     private static String[] getPolyStrFromUser(int numOfPolys) {
         input.nextLine();
-        String[] polinoms = new String[numOfPolys];
+        String[] polynoms = new String[numOfPolys];
         System.out.println("Input the first polynom: ");
-        polinoms[0] = input.nextLine();
+        polynoms[0] = input.nextLine();
 
         if (numOfPolys > 1) {
 
             System.out.println("Input the second polynom: ");
-            polinoms[1] = input.nextLine();
+            polynoms[1] = input.nextLine();
         }
 
-        return polinoms;
+        return polynoms;
     }
 
     /**

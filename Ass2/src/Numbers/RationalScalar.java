@@ -128,9 +128,11 @@ public class RationalScalar implements Scalar {
     @Override
     public String toString() {
         String s = "";
-        if (down == 1)
+        if (down == 1) {
+            if (up == 1)
+                return s;
             return s + up;
-
+        }
         return s + up + "/" + down;
     }
 }
