@@ -79,6 +79,9 @@ public class PolyTerm implements PolyTermInterface, Comparable<PolyTerm> {
     }
 
     public String toString() {
+        if(scalar.isZero())
+            return "0";
+
         if (exponent == 0)
             return scalar.toString();
 

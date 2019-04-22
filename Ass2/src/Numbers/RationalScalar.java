@@ -6,47 +6,48 @@ public class RationalScalar implements Scalar {
     private int down;
 
     public static RationalScalar createRational(int up, int down) {
-        int divider = 1;
         if (down != 0) {
-            if (up != 0)
-                divider = largestDivider(up, down);
-            return new RationalScalar(up / divider, down / divider);
+            return new RationalScalar(up, down);
         }
         System.out.println("Denominator can't be 0");
         return null;
     }
 
-    private static int largestDivider(int up, int down) {
-        up = Math.abs(up);
-        down = Math.abs(down);
+    private void reduceByDivider(int up, int down) {
+        if (up != 0) {
+            up = Math.abs(up);
+            down = Math.abs(down);
 
-        while (up != down) {
-            if (up > down)
-                up = up - down;
-            else
-                down = down - up;
+            while (up != down) {
+                if (up > down)
+                    up = up - down;
+                else
+                    down = down - up;
+            }
+            this.up = this.up / down;
+            this.down = this.down / down;
         }
-        return down;
     }
 
     private RationalScalar(int up, int down) {
         this.up = up;
         this.down = down;
+        reduceByDivider(up, down);
         checkIfDownNegative();
     }
 
     private void checkIfDownNegative() {
         if (down < 0) {
-            up = -1 * up;
-            down = -1 * down;
+            up = (-1) * up;
+            down = (-1) * down;
         }
     }
 
-    public int getUp() {
+    private int getUp() {
         return up;
     }
 
-    public int getDown() {
+    private int getDown() {
         return down;
     }
 
@@ -56,10 +57,12 @@ public class RationalScalar implements Scalar {
         int downByOtherUp = down * ((RationalScalar) s).getUp();
         int sumOfTop = upByOtherDown + downByOtherUp;
         int downByDown = down * ((RationalScalar) s).getDown();
-        int divider = largestDivider(sumOfTop, downByDown);
-        up = sumOfTop / divider;
-        down = downByDown / divider;
+
+        up = sumOfTop;
+        down = downByDown;
+
         checkIfDownNegative();
+        reduceByDivider(sumOfTop, downByDown);
         return this;
     }
 
@@ -67,9 +70,8 @@ public class RationalScalar implements Scalar {
     public Scalar mul(Scalar s) {
         up = up * ((RationalScalar) s).getUp();
         down = down * ((RationalScalar) s).getDown();
-        int divider = largestDivider(up, down);
-        up = up / divider;
-        down = down / divider;
+
+        reduceByDivider(up, down);
         checkIfDownNegative();
         return RationalScalar.createRational(up, down);
     }

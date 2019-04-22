@@ -48,6 +48,7 @@ public class Polynomial implements PolynomialInterface {
                 temp.add(term.mul(term1));
         }
         polinom = temp;
+        Collections.sort(polinom);
         checkZeroes();
         return this;
     }

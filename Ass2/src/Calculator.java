@@ -15,7 +15,7 @@ public class Calculator {
         String mathChoice;
         String field;
 
-        System.out.println("Welcome to polynomial calculator\n");
+        System.out.println("Welcome to polynomial calculator");
         mathMenu();
         mathChoice = input.next();
         while (!mathChoice.equals("5")) {
