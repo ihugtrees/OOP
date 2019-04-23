@@ -34,8 +34,23 @@ public class Parser {
                 strPolynoms[i] = strPolynoms[i].charAt(0) + strPolynoms[i].substring(1).replaceAll("-", "+-");
             else
                 strPolynoms[i] = strPolynoms[i].replaceAll("-", "+-");
+
+            fixBackslashMinus(strPolynoms, i);
+        }
+
+
+    }
+
+    private void fixBackslashMinus(String[] strPolynom, int wordNum) {
+        for (int i = 0; i < strPolynom.length; i++) {
+            int index;
+            if((index = strPolynom[wordNum].indexOf("/+-")) != -1){
+                //strPolynom = strPolynom.substring(0, index).concat(strPolynom.substring(index+1, strPolynom.length()-1));
+                strPolynom[wordNum] = strPolynom[wordNum].replace("/+-", "/-");
+            }
         }
     }
+
 
     /**
      * Given a string that represent a number, returns a rational number
@@ -123,7 +138,6 @@ public class Parser {
     private Polynomial extractPolynom(String[] parts, String field) {
         List<PolyTerm> polyTerms = new LinkedList<>();
         for (String part : parts) {
-            //RationalScalar scalar = null;
             Scalar scalar = null;
             int exp;
             String[] strPolyTerm = part.split("\\^");

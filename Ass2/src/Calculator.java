@@ -44,7 +44,7 @@ public class Calculator {
                 strPolynoms = getPolyStrFromUser(2);
                 polynomials = _parser.convertStrToPoly(strPolynoms, field);
                 Polynomial addPoly = polynomials[0].add(polynomials[1]);
-                System.out.println(_parser.convertPolyToStr(addPoly, "The solution is:"));
+                System.out.println(_parser.convertPolyToStr(addPoly, "The solution is: "));
                 break;
             }
             case "2": {
