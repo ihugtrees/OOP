@@ -52,7 +52,7 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public Scalar add(Scalar s) {//TODO: working
+    public Scalar add(Scalar s) {
         int upByOtherDown = up * ((RationalScalar) s).getDown();
         int downByOtherUp = down * ((RationalScalar) s).getUp();
         int sumOfTop = upByOtherDown + downByOtherUp;

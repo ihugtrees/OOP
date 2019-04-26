@@ -44,7 +44,7 @@ public class Parser {
     private void fixBackslashMinus(String[] strPolynom, int wordNum) {
         for (int i = 0; i < strPolynom.length; i++) {
             int index;
-            if((index = strPolynom[wordNum].indexOf("/+-")) != -1){
+            if ((index = strPolynom[wordNum].indexOf("/+-")) != -1) {
                 //strPolynom = strPolynom.substring(0, index).concat(strPolynom.substring(index+1, strPolynom.length()-1));
                 strPolynom[wordNum] = strPolynom[wordNum].replace("/+-", "/-");
             }
@@ -222,5 +222,4 @@ public class Parser {
         }
         return realScalar;
     }
-
 }

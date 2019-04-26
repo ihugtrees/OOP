@@ -54,7 +54,7 @@ public class Polynomial implements PolynomialInterface {
     }
 
     @Override
-    public Scalar evaluate(Scalar scalar) {//todo: howw
+    public Scalar evaluate(Scalar scalar) {
         Scalar s;
 
         if (isQ)

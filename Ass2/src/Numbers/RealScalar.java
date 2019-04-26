@@ -76,7 +76,7 @@ public class RealScalar implements Scalar {
         return num < 0;
     }
 
-    public String toString() {//todo:check thiss
+    public String toString() {
         String s = "";
         if (num == (int) num)
             return s + (int) num;
