@@ -25,16 +25,13 @@ public class PolyTerm implements PolyTermInterface, Comparable<PolyTerm> {
         return scalar;
     }
 
-    public int getExponent() {
+    int getExponent() {
         return exponent;
     }
 
     @Override
     public boolean canAdd(PolyTerm pt) {
-        if (exponent == pt.getExponent()) {
-            return true;
-        }
-        return false;
+        return exponent == pt.getExponent();
     }
 
     @Override
