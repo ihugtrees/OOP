@@ -88,6 +88,9 @@ public class Polynomial implements PolynomialInterface {
         return true;
     }
 
+    /**
+     * Removes zero numbers from Polynomial
+     */
     private void checkZeroes() {
         List<PolyTerm> toRemove = new LinkedList<>();
         for (PolyTerm term : polinom)
@@ -101,6 +104,11 @@ public class Polynomial implements PolynomialInterface {
                 polinom.remove(term);
     }
 
+    /**
+     *
+     * @param exponent - the exponent to check
+     * @return - if exponent exist in this Polynomial
+     */
     private int containsExponent(int exponent) {
         for (int i = 0; i < polinom.size(); i++)
             if (polinom.get(i).getExponent() == exponent)

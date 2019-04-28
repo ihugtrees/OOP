@@ -86,7 +86,7 @@ public class Parser {
             return "";
 
         for (PolyTerm polyTerm : polyTermList) {
-            if (polyTerm.getScalar().isNegetive()) {
+            if (polyTerm.getScalar().isNegative()) {
                 s += polyTerm.toString();
                 isFirst = false;
             } else if (isFirst) {
@@ -115,7 +115,7 @@ public class Parser {
      * Given an array of strings, creates from them array of polynoms
      *
      * @param strPolynoms - Given array
-     * @param field
+     * @param field - the scalar field
      * @return polynomials - array of polynoms
      */
     private Polynomial[] convertToPolynomials(String[] strPolynoms, String field) {
@@ -132,7 +132,7 @@ public class Parser {
      * Given a String splitted according to '+' sign, parse and creates a polynom from it
      *
      * @param parts - splitted string that represents a polynom
-     * @param field
+     * @param field - the scalar field
      * @return polynomial - new polynom
      */
     private Polynomial extractPolynom(String[] parts, String field) {

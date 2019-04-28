@@ -13,6 +13,12 @@ public class RationalScalar implements Scalar {
         return null;
     }
 
+    /**
+     * This function reduces the fraction to minimum
+     * @param up - The numerator
+     * @param down - The Denominator
+     */
+
     private void reduceByDivider(int up, int down) {
         if (up != 0) {
             up = Math.abs(up);
@@ -36,6 +42,9 @@ public class RationalScalar implements Scalar {
         checkIfDownNegative();
     }
 
+    /**
+     * Checks if Denominator is negative and makes it positive
+     */
     private void checkIfDownNegative() {
         if (down < 0) {
             up = (-1) * up;
@@ -123,7 +132,7 @@ public class RationalScalar implements Scalar {
     }
 
     @Override
-    public boolean isNegetive() {
+    public boolean isNegative() {
         return down < 0 || up < 0;
     }
 

@@ -72,7 +72,7 @@ public class RealScalar implements Scalar {
     }
 
     @Override
-    public boolean isNegetive() {
+    public boolean isNegative() {
         return num < 0;
     }
 
