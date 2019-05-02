@@ -15,7 +15,8 @@ public class RationalScalar implements Scalar {
 
     /**
      * This function reduces the fraction to minimum
-     * @param up - The numerator
+     *
+     * @param up   - The numerator
      * @param down - The Denominator
      */
 
@@ -95,8 +96,8 @@ public class RationalScalar implements Scalar {
 
 
         for (int i = 1; i < exponent; i++) {
-            tempUp = up * up;
-            tempDown = down * down;
+            tempUp = tempUp * up;
+            tempDown = tempDown * down;
         }
 
         if (exponent < 0) {
@@ -123,6 +124,7 @@ public class RationalScalar implements Scalar {
     @Override
     public Scalar mulByInt(int num) {
         up = up * num;
+        reduceByDivider(up, down);
         return this;
     }
 
@@ -141,7 +143,7 @@ public class RationalScalar implements Scalar {
         String s = "";
         if (down == 1) {
             if (up == 1)
-                return s;
+                return "1";
             return s + up;
         }
         return s + up + "/" + down;

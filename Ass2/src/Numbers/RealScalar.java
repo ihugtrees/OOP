@@ -39,7 +39,7 @@ public class RealScalar implements Scalar {
             return new RealScalar(1);
 
         for (int i = 1; i < exponent; i++)
-            tempNum = num * num;
+            tempNum = tempNum * num;
 
         checkZero();
         if (exponent < 0)

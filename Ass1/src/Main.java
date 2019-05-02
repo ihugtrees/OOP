@@ -12,7 +12,7 @@ public class Main {
         Grower grower = new Grower("Grower", gardener);
         Wholesaler saler = new Wholesaler("Wholesaler", grower);
         Person robin = new Person("Robin");
-        Florist robins = new Florist("Robin’s Florist", delivery, arranger, saler);
+        Florist robins = new Florist("Robin's Florist", delivery, arranger, saler);
 
         chris.setFlorist(fred);
         robin.setFlorist(robins);
