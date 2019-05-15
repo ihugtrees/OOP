@@ -8,14 +8,8 @@ public abstract class Tile {
 	 * @param gameplay
 	 * @param unit
 	 */
-	public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
-		// TODO - implement Tile.unitApproach
-		throw new UnsupportedOperationException();
-	}
+	public abstract void unitApproach(Gameplay gameplay, ActiveGameUnit unit) ;
 
-	public boolean isMovable() {
-		// TODO - implement Tile.isMovable
-		throw new UnsupportedOperationException();
-	}
+	public abstract boolean isMovable() ;
 
 }

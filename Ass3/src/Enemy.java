@@ -1,4 +1,4 @@
-public class Enemy extends ActiveGameUnit {
+public abstract class Enemy extends ActiveGameUnit {
 
 	/**
 	 * 

@@ -1,6 +1,6 @@
-public class ActiveGameUnit extends Tile {
+public abstract class ActiveGameUnit extends Tile {
 
-	private string name;
+	private String name;
 	private int healthPool;
 	private int currentHealth;
 	private int attack;
