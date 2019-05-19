@@ -7,4 +7,8 @@ public class Mage extends Player {
 	private int hitTimes;
 	private int range;
 
+	@Override
+	public void playerAbility(Gameplay gameplay) {
+
+	}
 }

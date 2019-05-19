@@ -1,4 +1,4 @@
-public class Player extends ActiveGameUnit {
+public abstract class Player extends ActiveGameUnit {
 
 	private int experience = 0;
 	private int level = 1;
@@ -7,6 +7,7 @@ public class Player extends ActiveGameUnit {
 	public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
 		gameplay.handleCombat(unit,this);
 	}
+	public abstract void playerAbility(Gameplay gameplay);
 
 
 }

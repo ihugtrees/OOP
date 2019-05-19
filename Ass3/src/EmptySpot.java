@@ -6,6 +6,6 @@ public class EmptySpot extends Tile {
 
     @Override
     public boolean isMovable() {
-        return false;
+        return true;
     }
 }
