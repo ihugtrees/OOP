@@ -12,12 +12,16 @@ public abstract class ActiveGameUnit extends Tile {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param attack
+	 * @return
 	 */
-	public void defence(int attack) {
-		// TODO - implement ActiveGameUnit.defence
+	public int defend(int attack) {
+		// TODO - implement ActiveGameUnit.defend
 		throw new UnsupportedOperationException();
+	}
+	public boolean isMovable() {
+		return true;
 	}
 
 }

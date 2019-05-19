@@ -1,14 +1,47 @@
+import java.util.LinkedList;
 import java.util.List;
 
 public class Gameplay {
-
+	Player player;
+	LinkedList<Enemy> enemies;
+	Board board;
 	/**
 	 * 
 	 * @param playerMove
 	 */
-	public void turn(char playerMove) {
+	public void turn(char playerMove) throws Exception {
 		// TODO - implement Gameplay.turn
-		throw new UnsupportedOperationException();
+		Position playerPosition = player.getPosition();
+		Tile moveTo;
+		switch (playerMove){
+			case 'w':
+				unitMove(player,playerPosition.getX(),playerPosition.getY()+1);
+
+					break;
+			case 's':
+				unitMove(player,playerPosition.getX(),playerPosition.getY()-1);
+				break;
+			case 'a':
+				unitMove(player,playerPosition.getX()-1,playerPosition.getY());
+				break;
+			case 'd':
+				unitMove(player,playerPosition.getX()+1,playerPosition.getY());
+				break;
+			case 'q':
+				break;
+			case 'e':
+				break;
+				default:
+					throw new Exception("wrong input");
+		}
+		continueEnemyTurn();
+	}
+
+	private void continueEnemyTurn() {
+		for (Enemy enemy:enemies
+			 ) {
+			enemy.turn(player.getPosition(),this);
+		}
 	}
 
 	/**
@@ -18,8 +51,8 @@ public class Gameplay {
 	 * @param y
 	 */
 	public void unitMove(ActiveGameUnit unit, int x, int y) {
-		// TODO - implement Gameplay.unitMove
-		throw new UnsupportedOperationException();
+		Tile t= board.getTileAt(x,y);
+		t.unitApproach(this,unit);
 	}
 
 	public void playerAbility() {
@@ -38,8 +71,9 @@ public class Gameplay {
 	 * @param unit
 	 */
 	public void unitToEmpty(EmptySpot empty, ActiveGameUnit unit) {
-		// TODO - implement Gameplay.unitToEmpty
-		throw new UnsupportedOperationException();
+		Position tmp = empty.getPosition();
+		empty.setPosition(unit.getPosition());
+		unit.setPosition(tmp);
 	}
 
 	/**
@@ -48,8 +82,8 @@ public class Gameplay {
 	 * @param unit
 	 */
 	public void unitToWall(Wall wall, ActiveGameUnit unit) {
-		// TODO - implement Gameplay.unitToWall
-		throw new UnsupportedOperationException();
+		//TODO: do we need to do something?
+		return;
 	}
 
 	/**
@@ -58,8 +92,11 @@ public class Gameplay {
 	 * @param defender
 	 */
 	public void handleCombat(ActiveGameUnit attacker, ActiveGameUnit defender) {
-		// TODO - implement Gameplay.handleCombat
-		throw new UnsupportedOperationException();
+		int attack = attacker.attack();
+		int life = defender.defend(attack);
+		if (life<=0){
+			//TODO: manage death
+		}
 	}
 
 	/**
@@ -68,8 +105,7 @@ public class Gameplay {
 	 * @param position
 	 */
 	public List<Tile> getEmptyTileInRadius(int radius, Position position) {
-		// TODO - implement Gameplay.getEmptyTileInRadius
-		throw new UnsupportedOperationException();
+		return board.getEmptyTileInRadius(radius,position);
 	}
 
 	/**
@@ -77,9 +113,9 @@ public class Gameplay {
 	 * @param x
 	 * @param y
 	 */
-	public void monsterMove(int x, int y) {
-		// TODO - implement Gameplay.monsterMove
-		throw new UnsupportedOperationException();
+	public void monsterMove(ActiveGameUnit monster,int x, int y) {
+		Tile moveTo = board.getTileAt(x,y);
+		moveTo.unitApproach(this,monster);
 	}
 
 }

@@ -1,7 +1,7 @@
 public abstract class Tile {
 
-	private char tileSign;
-	private Position location;
+	protected char tileSign;
+	private Position position;
 
 	/**
 	 * 
@@ -11,5 +11,15 @@ public abstract class Tile {
 	public abstract void unitApproach(Gameplay gameplay, ActiveGameUnit unit) ;
 
 	public abstract boolean isMovable() ;
+	public Position getPosition(){
+		return position;
+	}
 
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+
+	public char getTileSign() {
+		return tileSign;
+	}
 }
