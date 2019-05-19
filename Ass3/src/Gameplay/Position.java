@@ -1,3 +1,5 @@
+package Gameplay;
+
 public class Position {
 
 	private int x;

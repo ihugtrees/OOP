@@ -1,3 +1,7 @@
+package Gameplay;
+
+import Units.ActiveGameUnit;
+
 public abstract class Tile {
 
 	protected char tileSign;
@@ -19,7 +23,5 @@ public abstract class Tile {
 		this.position = position;
 	}
 
-	public char getTileSign() {
-		return tileSign;
-	}
+	public abstract char getTileSign();
 }

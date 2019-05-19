@@ -1,3 +1,7 @@
+package Units;
+
+import Gameplay.*;
+import Utils.*;
 import java.util.List;
 
 public class Trap extends Enemy {
@@ -5,8 +9,15 @@ public class Trap extends Enemy {
 	private int relocationRange;
 	private int relocationTime;
 	private int visibilityTime;
-	private int ticksCount;
+	private int ticksCount = 0;
 	private boolean isVisible;
+
+	public Trap(String name, int healthPool, int currentHealth, int attack, int defence, int relocationRange, int relocationTime, int visibilityTime, int ticksCount) {
+		super(name, healthPool, currentHealth, attack, defence);
+		this.relocationRange = relocationRange;
+		this.relocationTime = relocationTime;
+		this.visibilityTime = visibilityTime;
+	}
 
 	@Override
 	public void turn(Position playerPosition, Gameplay gameplay) {

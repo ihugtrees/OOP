@@ -1,6 +1,16 @@
+package Units;
+
+import Gameplay.*;
+import Utils.*;
+
 public class Monster extends Enemy {
 
 	private int visionRange;
+
+	public Monster(String name, int healthPool, int currentHealth, int attack, int defence, int visionRange) {
+		super(name, healthPool, currentHealth, attack, defence);
+		this.visionRange = visionRange;
+	}
 
 	@Override
 	public void turn(Position playerPosition, Gameplay gameplay) {

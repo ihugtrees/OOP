@@ -1,3 +1,7 @@
+package Units;
+
+import Gameplay.Tile;
+
 public abstract class ActiveGameUnit extends Tile {
 
 	private String name;
@@ -6,8 +10,16 @@ public abstract class ActiveGameUnit extends Tile {
 	private int attack;
 	private int defence;
 
+	public ActiveGameUnit(String name, int healthPool, int currentHealth, int attack, int defence) {
+		this.name = name;
+		this.healthPool = healthPool;
+		this.currentHealth = currentHealth;
+		this.attack = attack;
+		this.defence = defence;
+	}
+
 	public int attack() {
-		// TODO - implement ActiveGameUnit.attack
+		// TODO - implement Units.ActiveGameUnit.attack
 		throw new UnsupportedOperationException();
 	}
 
@@ -17,7 +29,7 @@ public abstract class ActiveGameUnit extends Tile {
 	 * @return
 	 */
 	public int defend(int attack) {
-		// TODO - implement ActiveGameUnit.defend
+		// TODO - implement Units.ActiveGameUnit.defend
 		throw new UnsupportedOperationException();
 	}
 	public boolean isMovable() {
