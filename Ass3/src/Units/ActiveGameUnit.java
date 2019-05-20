@@ -1,5 +1,6 @@
 package Units;
 
+import Gameplay.Position;
 import Gameplay.Tile;
 
 public abstract class ActiveGameUnit extends Tile {
@@ -10,7 +11,8 @@ public abstract class ActiveGameUnit extends Tile {
 	private int attack;
 	private int defence;
 
-	public ActiveGameUnit(String name, int healthPool, int currentHealth, int attack, int defence) {
+	public ActiveGameUnit(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence) {
+		super(tileSign, position);
 		this.name = name;
 		this.healthPool = healthPool;
 		this.currentHealth = currentHealth;

@@ -1,14 +1,18 @@
 package Units;
 
-import Gameplay.*;
+
+import Gameplay.Gameplay;
+import Gameplay.Position;
 
 public abstract class Player extends ActiveGameUnit {
 
 	private int experience = 0;
 	private int level = 1;
 
-	public Player(String name, int healthPool, int currentHealth, int attack, int defence) {
-		super(name, healthPool, currentHealth, attack, defence);
+	public Player(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence, int experience, int level) {
+		super(tileSign, position, name, healthPool, currentHealth, attack, defence);
+		this.experience = experience;
+		this.level = level;
 	}
 
 	@Override

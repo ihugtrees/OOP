@@ -7,6 +7,13 @@ public abstract class Tile {
 	protected char tileSign;
 	private Position position;
 
+	public Tile(char tileSign, Position position) {
+		this.tileSign = tileSign;
+		this.position = position;
+	}
+
+	public abstract boolean isMovable() ;
+
 	/**
 	 * 
 	 * @param gameplay
@@ -14,7 +21,6 @@ public abstract class Tile {
 	 */
 	public abstract void unitApproach(Gameplay gameplay, ActiveGameUnit unit) ;
 
-	public abstract boolean isMovable() ;
 	public Position getPosition(){
 		return position;
 	}
@@ -23,5 +29,5 @@ public abstract class Tile {
 		this.position = position;
 	}
 
-	public abstract char getTileSign();
+	public char getTileSign(){return tileSign;}
 }
