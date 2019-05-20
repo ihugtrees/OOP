@@ -33,9 +33,11 @@ public class Gameplay {
             case 'd':
                 unitMove(player, playerPosition.getX() + 1, playerPosition.getY());
                 break;
-            case 'q':
-                break;
             case 'e':
+                playerAbility();
+                break;
+            case 'q':
+                continueEnemyTurn();
                 break;
             default:
                 throw new Exception("wrong input");
@@ -60,13 +62,7 @@ public class Gameplay {
     }
 
     public void playerAbility() {
-        // TODO - implement Gameplay.Gameplay.playerAbility
-        throw new UnsupportedOperationException();
-    }
-
-    public void playerIdle() {
-        // TODO - implement Gameplay.Gameplay.playerIdle
-        throw new UnsupportedOperationException();
+        player.playerAbility(this);
     }
 
     /**
@@ -85,7 +81,6 @@ public class Gameplay {
      */
     public void unitToWall(Wall wall, ActiveGameUnit unit) {
         //TODO: do we need to do something?
-        return;
     }
 
     /**
@@ -116,5 +111,4 @@ public class Gameplay {
         Tile moveTo = board.getTileAt(x, y);
         moveTo.unitApproach(this, monster);
     }
-
 }

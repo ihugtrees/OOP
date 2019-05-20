@@ -11,7 +11,7 @@ public class Wall extends Tile {
 
     @Override
     public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
-
+        gameplay.unitToWall(this,unit);
     }
 
     @Override
