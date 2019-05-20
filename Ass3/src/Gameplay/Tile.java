@@ -1,6 +1,7 @@
 package Gameplay;
 
 import Units.ActiveGameUnit;
+import Units.Player;
 
 public abstract class Tile {
 
@@ -20,7 +21,7 @@ public abstract class Tile {
 	 * @param unit
 	 */
 	public abstract void unitApproach(Gameplay gameplay, ActiveGameUnit unit) ;
-
+	public abstract void unitApproach(Gameplay gameplay, Player player) ;
 	public Position getPosition(){
 		return position;
 	}

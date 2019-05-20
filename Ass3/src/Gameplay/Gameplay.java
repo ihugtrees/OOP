@@ -22,16 +22,16 @@ public class Gameplay {
         Tile moveTo;
         switch (playerMove) {
             case 'w':
-                unitMove(player, playerPosition.getX(), playerPosition.getY() + 1);
+                playerMove( playerPosition.getX(), playerPosition.getY() + 1);
                 break;
             case 's':
-                unitMove(player, playerPosition.getX(), playerPosition.getY() - 1);
+                playerMove(playerPosition.getX(), playerPosition.getY() - 1);
                 break;
             case 'a':
-                unitMove(player, playerPosition.getX() - 1, playerPosition.getY());
+                playerMove( playerPosition.getX() - 1, playerPosition.getY());
                 break;
             case 'd':
-                unitMove(player, playerPosition.getX() + 1, playerPosition.getY());
+                playerMove( playerPosition.getX() + 1, playerPosition.getY());
                 break;
             case 'e':
                 playerAbility();
@@ -52,13 +52,13 @@ public class Gameplay {
     }
 
     /**
-     * @param unit
+     * @param
      * @param x
      * @param y
      */
-    public void unitMove(ActiveGameUnit unit, int x, int y) {
+    public void playerMove( int x, int y) {
         Tile t = board.getTileAt(x, y);
-        t.unitApproach(this, unit);
+        t.unitApproach(this, player);
     }
 
     public void playerAbility() {
@@ -88,6 +88,7 @@ public class Gameplay {
      * @param defender
      */
     public void handleCombat(ActiveGameUnit attacker, ActiveGameUnit defender) {
+
         int attack = attacker.attack();
         int life = defender.defend(attack);
         if (life <= 0) {
@@ -110,5 +111,13 @@ public class Gameplay {
     public void monsterMove(ActiveGameUnit monster, int x, int y) {
         Tile moveTo = board.getTileAt(x, y);
         moveTo.unitApproach(this, monster);
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
     }
 }

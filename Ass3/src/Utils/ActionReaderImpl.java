@@ -16,6 +16,6 @@ public class ActionReaderImpl implements ActionReader {
         if (isD)
             return userInput.next();
         else
-            return;
+            return null;
     }
 }

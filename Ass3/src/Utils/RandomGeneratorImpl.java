@@ -15,6 +15,6 @@ public class RandomGeneratorImpl implements RandomGenerator {
         if(isD)
             return rnd.nextInt(n);
         else
-            return;
+            return 0;
     }
 }

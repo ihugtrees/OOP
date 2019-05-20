@@ -26,13 +26,13 @@ public class Trap extends Enemy {
 		if (ticksCount == relocationTime) {
 			ticksCount = 0;
 			List<Tile> placesToMove = gameplay.getEmptyTileInRadius(relocationRange, this.getPosition());
-			Tile toMove = placesToMove.get(new RandomGeneratorImpl().nextInt(placesToMove.size()));
-			gameplay.unitMove(this, toMove.getPosition().getX(), toMove.getPosition().getY());
+			Tile toMove = placesToMove.get(new RandomGeneratorImpl(true).nextInt(placesToMove.size()));
+			gameplay.monsterMove(this, toMove.getPosition().getX(), toMove.getPosition().getY());
 		} else {
 			ticksCount++;
 			if (Util.isInRange(this.getPosition().getX(), this.getPosition().getY()
 					, playerPosition.getX(), playerPosition.getY(), 2)) {
-					gameplay.unitMove(this,playerPosition.getX(),playerPosition.getY());
+					gameplay.monsterMove(this,playerPosition.getX(),playerPosition.getY());
 			}
 			if(ticksCount<visibilityTime){
 				this.isVisible=true;

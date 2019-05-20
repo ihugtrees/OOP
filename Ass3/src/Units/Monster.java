@@ -20,18 +20,18 @@ public class Monster extends Enemy {
 			int dy = this.getPosition().getY()-playerPosition.getY();
 			if(dx>dy){
 				if(dx>0){
-					gameplay.unitMove(this,this.getPosition().getX()-1,this.getPosition().getY());
+					gameplay.monsterMove(this,this.getPosition().getX()-1,this.getPosition().getY());
 				}
 				else{
-					gameplay.unitMove(this,this.getPosition().getX()+1,this.getPosition().getY());
+					gameplay.monsterMove(this,this.getPosition().getX()+1,this.getPosition().getY());
 				}
 			}
 			else{
 				if(dy>0){
-					gameplay.unitMove(this,this.getPosition().getX(),this.getPosition().getY()+1);
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()+1);
 				}
 				else{
-					gameplay.unitMove(this,this.getPosition().getX(),this.getPosition().getY()-1);
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()-1);
 				}
 			}
 		}else{

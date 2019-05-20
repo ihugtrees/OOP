@@ -1,6 +1,7 @@
 package Gameplay;
 
 import Units.ActiveGameUnit;
+import Units.Player;
 
 public class Wall extends Tile {
 
@@ -12,6 +13,11 @@ public class Wall extends Tile {
     @Override
     public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
         gameplay.unitToWall(this,unit);
+    }
+
+    @Override
+    public void unitApproach(Gameplay gameplay, Player player) {
+        gameplay.unitToWall(this,player);
     }
 
     @Override

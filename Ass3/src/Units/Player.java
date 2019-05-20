@@ -18,5 +18,8 @@ public abstract class Player extends ActiveGameUnit {
 	public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
 		gameplay.handleCombat(unit,this);
 	}
+	public void unitApproach(Gameplay gameplay, Player unit) {
+		return;
+	}
 	public abstract void playerAbility(Gameplay gameplay);
 }

@@ -16,6 +16,9 @@ public abstract class Enemy extends ActiveGameUnit {
 	 */
 	public abstract void turn(Position playerPosition, Gameplay gameplay) ;
 	public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
-		gameplay.handleCombat(unit,this);
+		return;
+	}
+	public void unitApproach(Gameplay gameplay, Player player) {
+		gameplay.handleCombat(player,this);
 	}
 }

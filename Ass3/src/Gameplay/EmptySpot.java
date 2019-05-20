@@ -1,6 +1,7 @@
 package Gameplay;
 
 import Units.ActiveGameUnit;
+import Units.Player;
 
 public class EmptySpot extends Tile {
     public EmptySpot(char tileSign, Position position) {
@@ -10,6 +11,11 @@ public class EmptySpot extends Tile {
     @Override
     public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
         gameplay.unitToEmpty(this, unit);
+    }
+
+    @Override
+    public void unitApproach(Gameplay gameplay, Player player) {
+        gameplay.unitToEmpty(this,player);
     }
 
     @Override
