@@ -11,8 +11,8 @@ public class Mage extends Player {
 	private int hitTimes;
 	private int range;
 
-	public Mage(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence, int experience, int level, int spellPower, int manaPool, int currentMana, int cost, int hitTimes, int range) {
-		super(tileSign, position, name, healthPool, currentHealth, attack, defence, experience, level);
+	public Mage(char tileSign, Position position, String name, int healthPool,int attack, int defence, int spellPower, int manaPool, int cost, int hitTimes, int range) {
+		super(tileSign, position, name, healthPool,  attack, defence);
 		this.spellPower = spellPower;
 		this.manaPool = manaPool;
 		this.currentMana = manaPool/4;

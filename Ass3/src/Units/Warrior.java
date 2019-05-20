@@ -8,10 +8,10 @@ public class Warrior extends Player {
 	private int cooldown;
 	private int remaining = 0;
 
-	public Warrior(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence, int experience, int level, int cooldown, int remaining) {
-		super(tileSign, position, name, healthPool, currentHealth, attack, defence, experience, level);
+	public Warrior(char tileSign, Position position, String name, int healthPool, int attack, int defence, int cooldown) {
+		super(tileSign, position, name, healthPool, attack, defence);
 		this.cooldown = cooldown;
-		this.remaining = remaining;
+
 	}
 
 	@Override

@@ -4,9 +4,10 @@ import Gameplay.Gameplay;
 import Gameplay.Position;
 
 public abstract class Enemy extends ActiveGameUnit {
-
-	public Enemy(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence) {
-		super(tileSign, position, name, healthPool, currentHealth, attack, defence);
+	int experienceValue;
+	public Enemy(char tileSign, Position position, String name, int healthPool, int attack, int defence,int experienceVal) {
+		super(tileSign, position, name, healthPool, attack, defence);
+		this.experienceValue = experienceVal;
 	}
 
 	/**

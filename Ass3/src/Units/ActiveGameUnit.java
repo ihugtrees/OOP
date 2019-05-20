@@ -12,11 +12,11 @@ public abstract class ActiveGameUnit extends Tile {
     private int attack;
     private int defence;
 
-    public ActiveGameUnit(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence) {
+    public ActiveGameUnit(char tileSign, Position position, String name, int healthPool, int attack, int defence) {
         super(tileSign, position);
         this.name = name;
         this.healthPool = healthPool;
-        this.currentHealth = currentHealth;
+        this.currentHealth = healthPool;
         this.attack = attack;
         this.defence = defence;
     }

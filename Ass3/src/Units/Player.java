@@ -8,10 +8,8 @@ public abstract class Player extends ActiveGameUnit {
 	private int experience = 0;
 	private int level = 1;
 
-	public Player(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence, int experience, int level) {
-		super(tileSign, position, name, healthPool, currentHealth, attack, defence);
-		this.experience = experience;
-		this.level = level;
+	public Player(char tileSign, Position position, String name, int healthPool, int attack, int defence) {
+		super(tileSign, position, name, healthPool, attack, defence);
 	}
 
 	@Override

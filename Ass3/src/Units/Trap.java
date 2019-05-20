@@ -12,8 +12,8 @@ public class Trap extends Enemy {
 	private int ticksCount = 0;
 	private boolean isVisible;
 
-	public Trap(char tileSign, Position position, String name, int healthPool, int currentHealth, int attack, int defence, int relocationRange, int relocationTime, int visibilityTime, int ticksCount, boolean isVisible) {
-		super(tileSign, position, name, healthPool, currentHealth, attack, defence);
+	public Trap(char tileSign, Position position, String name, int healthPool, int attack, int defence, int relocationRange, int relocationTime, int visibilityTime, int ticksCount, boolean isVisible,int experienceVal) {
+		super(tileSign, position, name, healthPool, attack, defence,experienceVal);
 		this.relocationRange = relocationRange;
 		this.relocationTime = relocationTime;
 		this.visibilityTime = visibilityTime;

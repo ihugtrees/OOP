@@ -1,3 +1,5 @@
+package IO;
+
 import java.util.ArrayList;
 
 /**
@@ -16,7 +18,7 @@ public class StringSubject {
     public void addObserver(StringObserver stringObserver){
         observers.add(stringObserver);
     }
-    private void notifyObservers(String s){
+    public void notifyObservers(String s){
         for (StringObserver so:observers
              ) {
             so.update(s);
