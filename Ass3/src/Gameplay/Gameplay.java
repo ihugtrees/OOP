@@ -130,6 +130,8 @@ public class Gameplay {
      */
     public void handleCombat(ActiveGameUnit attacker, ActiveGameUnit defender) {
         StringSubject.getInstance().notifyObservers(attacker.getName()+" engaged in battle with "+defender.getName()+":");
+        StringSubject.getInstance().notifyObservers(attacker.toString());
+        StringSubject.getInstance().notifyObservers(defender.toString());
         int attack = attacker.attack();
         int damage = defender.defend(attack);
         StringSubject.getInstance().notifyObservers(attacker.getName()+" hit "+defender.getName()+" for "+damage +" points");
