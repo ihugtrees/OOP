@@ -36,7 +36,9 @@ public class Level {
     }
 
     private Tile getTileFromChar(char c, int x, int y) throws Exception {
+        Enemy e;
         switch (c) {
+
             case '.':
                 return new EmptySpot('.', new Position(x, y));
             case '#':
@@ -45,33 +47,59 @@ public class Level {
                 playerPosition = new Position(x, y);
                 return null;
             case 's':
-                return new Monster('s', new Position(x, y), "Lannister Solider", 80, 8, 3, 2, 25);
+                e = new Monster('s', new Position(x, y), "Lannister Solider", 80, 8, 3, 2, 25);
+                enemies.add(e);
+                return e;
             case 'k':
-                return new Monster('k', new Position(x, y), "Lannister Knight", 200, 15, 8, 4, 50);
+                e = new Monster('k', new Position(x, y), "Lannister Knight", 200, 15, 8, 4, 50);
+                enemies.add(e);
+                return e;
             case 'q':
-                return new Monster('q', new Position(x, y), "Queen's Guard", 400, 20, 15, 5, 100);
+
+                e = new Monster('q', new Position(x, y), "Queen's Guard", 400, 20, 15, 5, 100);
+                enemies.add(e);
+                return e;
             case 'z':
-                return new Monster('z', new Position(x, y), "Wright", 600, 30, 15, 3, 100);
+                e = new Monster('z', new Position(x, y), "Wright", 600, 30, 15, 3, 100);
+                enemies.add(e);
+                return e;
             case 'b':
-                return new Monster('b', new Position(x, y), "Bear-Wright", 1000, 75, 30, 4, 250);
+                e = new Monster('b', new Position(x, y), "Bear-Wright", 1000, 75, 30, 4, 250);
+                enemies.add(e);
             case 'g':
-                return new Monster('g', new Position(x, y), "Giant-Wright", 1500, 100, 40, 5, 500);
+                e = new Monster('g', new Position(x, y), "Giant-Wright", 1500, 100, 40, 5, 500);
+                enemies.add(e);
+                return e;
             case 'w':
-                return new Monster('w', new Position(x, y), "White Walker", 2000, 150, 50, 6, 1000);
+                e = new Monster('w', new Position(x, y), "White Walker", 2000, 150, 50, 6, 1000);
+                enemies.add(e);
+                return e;
             case 'M':
-                return new Monster('M',new Position(x,y),"The Mountain",1000,60,25,6,500);
+                e = new Monster('M', new Position(x, y), "The Mountain", 1000, 60, 25, 6, 500);
+                enemies.add(e);
+                return e;
             case 'C':
-                return new Monster('C',new Position(x,y),"Queen Cersei",100,10,10,1,1000);
+                e = new Monster('C', new Position(x, y), "Queen Cersei", 100, 10, 10, 1, 1000);
+                enemies.add(e);
+                return e;
             case 'K':
-                return new Monster('K',new Position(x,y),"Night King",5000,300,150,8,5000);
+                e = new Monster('K', new Position(x, y), "Night King", 5000, 300, 150, 8, 5000);
+                enemies.add(e);
+                return e;
             case 'B':
-                return new Trap('B',new Position(x,y),"Bonus \"Trap\"",1,1,1,5,6,2,0,true,250);
+                e = new Trap('B', new Position(x, y), "Bonus \"Trap\"", 1, 1, 1, 5, 6, 2, 0, true, 250);
+                enemies.add(e);
+                return e;
             case 'Q':
-                return new Trap('Q',new Position(x,y),"Queen's Trap",250,50,10,4,10,4,0,true,100);
+                e = new Trap('Q', new Position(x, y), "Queen's Trap", 250, 50, 10, 4, 10, 4, 0, true, 100);
+                enemies.add(e);
+                return e;
             case 'D':
-                return new Trap('D',new Position(x,y),"Death Trap",500,100,20,6,10,3,0,true,250);
-                default:
-                    throw new Exception("unknown monster in position ("+x+","+y+")");
+                e = new Trap('D', new Position(x, y), "Death Trap", 500, 100, 20, 6, 10, 3, 0, true, 250);
+                enemies.add(e);
+                return e;
+            default:
+                throw new Exception("unknown monster in position (" + x + "," + y + ")");
         }
     }
 
@@ -102,7 +130,8 @@ public class Level {
     public void setEnemies(List<Enemy> enemies) {
         this.enemies = enemies;
     }
-    public Tile[][] getBoard(){
+
+    public Tile[][] getBoard() {
         return board;
     }
 }

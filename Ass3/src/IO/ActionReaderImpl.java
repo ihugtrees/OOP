@@ -13,7 +13,7 @@ public class ActionReaderImpl implements ActionReader {
 
     @Override
     public String nextAction() {
-        if (isD)
+        if (!isD)
             return userInput.next();
         else
             return null;

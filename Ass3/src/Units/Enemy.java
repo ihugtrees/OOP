@@ -22,4 +22,10 @@ public abstract class Enemy extends ActiveGameUnit {
 	public void unitApproach(Gameplay gameplay, Player player) {
 		gameplay.handleCombat(player,this);
 	}
+	public String toString(){
+		return name+"\t\tHealth: "+currentHealth+"\tAttack damage: "+attack+"\tDefense: "+defence;
+	}
+	public boolean checkIfDead(Gameplay gameplay){
+		return currentHealth<=0;
+	}
 }

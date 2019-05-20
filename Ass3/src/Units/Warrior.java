@@ -18,4 +18,9 @@ public class Warrior extends Player {
 	public void playerAbility(Gameplay gameplay) {
 
 	}
+	public String toString(){
+		return ""+this.name+"\t\tHealth: "+this.currentHealth+"\tAttack damage: "+this.attack+
+				"\tDefense: "+this.defence+"\n\t\tLevel: "+level+"\tExperience: "+experience+"/"+level*50+
+				"\tAbility cooldown: "+cooldown+"\tRemaining: "+remaining;
+	}
 }

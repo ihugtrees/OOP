@@ -28,14 +28,30 @@ public class Monster extends Enemy {
 			}
 			else{
 				if(dy>0){
-					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()+1);
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()-1);
 				}
 				else{
-					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()-1);
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()+1);
 				}
 			}
 		}else{
-			//TODO: Random move
+			switch (RandomGeneratorImpl.getInstance().nextInt(5)){
+				case 0:
+					return;
+
+				case 1:
+					gameplay.monsterMove(this,this.getPosition().getX()-1,this.getPosition().getY());
+					break;
+				case 2:
+					gameplay.monsterMove(this,this.getPosition().getX()+1,this.getPosition().getY());
+					break;
+				case 3:
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()-1);
+					break;
+				case 4:
+					gameplay.monsterMove(this,this.getPosition().getX(),this.getPosition().getY()+1);
+					break;
+			}
 		}
 	}
 }

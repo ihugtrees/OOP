@@ -61,10 +61,10 @@ public class Gameplay {
 
         switch (playerMove) {
             case 'w':
-                playerMove( playerPosition.getX(), playerPosition.getY() + 1);
+                playerMove( playerPosition.getX(), playerPosition.getY() - 1);
                 break;
             case 's':
-                playerMove(playerPosition.getX(), playerPosition.getY() - 1);
+                playerMove(playerPosition.getX(), playerPosition.getY() + 1);
                 break;
             case 'a':
                 playerMove( playerPosition.getX() - 1, playerPosition.getY());
@@ -112,6 +112,8 @@ public class Gameplay {
         Position tmp = empty.getPosition();
         empty.setPosition(unit.getPosition());
         unit.setPosition(tmp);
+        board[empty.getPosition().getX()][empty.getPosition().getY()]=empty;
+        board[unit.getPosition().getX()][unit.getPosition().getY()]=unit;
     }
 
     /**
@@ -127,11 +129,13 @@ public class Gameplay {
      * @param defender
      */
     public void handleCombat(ActiveGameUnit attacker, ActiveGameUnit defender) {
-
+        StringSubject.getInstance().notifyObservers(attacker.getName()+" engaged in battle with "+defender.getName()+":");
         int attack = attacker.attack();
-        int life = defender.defend(attack);
-        if (life <= 0) {
+        int damage = defender.defend(attack);
+        StringSubject.getInstance().notifyObservers(attacker.getName()+" hit "+defender.getName()+" for "+damage +" points");
+        if (defender.checkIfDead(this)&&!isOver()) {
             //TODO: manage death
+
         }
     }
 
@@ -189,5 +193,9 @@ public class Gameplay {
             boardString +='\n';
         }
         return boardString;
+    }
+
+    public void playerDied() {
+        isOver=true;
     }
 }
