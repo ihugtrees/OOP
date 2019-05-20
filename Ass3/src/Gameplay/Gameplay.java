@@ -137,7 +137,8 @@ public class Gameplay {
         StringSubject.getInstance().notifyObservers(attacker.getName()+" hit "+defender.getName()+" for "+damage +" points");
         if (defender.checkIfDead(this)&&!isOver()) {
             //TODO: manage death
-
+            enemies.remove(defender);
+            board[defender.getPosition().getX()][defender.getPosition().getY()]=new EmptySpot('.',defender.getPosition());
         }
     }
 
