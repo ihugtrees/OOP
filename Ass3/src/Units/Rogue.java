@@ -19,10 +19,10 @@ public class Rogue extends Player {
         if (currentEnergy < cost)
             System.out.println("not enough energy");
         else {
-            currentEnergy = currentHealth - cost;
-            List<Tile> monstersInRange = gameplay.enemiesInRange(getPosition(), 2);
-            for (Tile tile : monstersInRange)
-               tile.unitApproach(gameplay,this);
+            currentEnergy = currentEnergy - cost;
+            List<Enemy> monstersInRange = gameplay.enemiesInRange(getPosition(), 2);
+            for (Enemy e : monstersInRange)
+                e.defend(gameplay, this, attack, true);
         }
     }
 
@@ -32,9 +32,9 @@ public class Rogue extends Player {
     }
 
     @Override
-    public void levelUp() {
+    public void levelUp(int health, int attack, int defence) {
         currentEnergy = 100;
-        attack += 3 * level;
+        this.attack += 3 * level;
     }
 
     public String toString() {

@@ -14,45 +14,39 @@ public abstract class Player extends ActiveGameUnit {
 
     public abstract void playerAbility(Gameplay gameplay);
 
-    public abstract void levelUp();
+    public abstract void levelUp(int health, int attack, int defence);
 
     public abstract void turn();
 
-    public void playerLevelUp() {
-        experience = 0;
+    private void playerLevelUp() {
+        experience -= 50 * level;
         level += 1;
         healthPool += 10 * level;
         currentHealth = healthPool;
         attack += 5 * level;
         defence += 2 * level;
-        levelUp();
+        levelUp(10 * level,5 * level,2 * level);
     }
 
-    public boolean checkIfDead(Gameplay gameplay) {
+    public void checkIfDead(Gameplay gameplay, ActiveGameUnit attacker) {
         if (currentHealth <= 0) {
             gameplay.playerDied();
             tileSign = 'X';
-            return true;
         }
-        return false;
     }
 
-    public void addExperience(int exp){
-        experience+=exp;
-        if(experience>=level*50)
+    public void addExperience(int exp) {
+        experience += exp;
+        while (experience >= level * 50)
             playerLevelUp();
     }
 
     @Override
     public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
-        gameplay.handleCombat(unit, this, unit.attack());
+        defend(gameplay, unit, unit.attack(), false);
     }
 
     @Override
     public void unitApproach(Gameplay gameplay, Player unit) {
-    }
-
-    public String whatAmI() {
-        return "player";
     }
 }

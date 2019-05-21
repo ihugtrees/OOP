@@ -15,8 +15,6 @@ public abstract class Tile {
 
     public abstract boolean isMovable();
 
-    public abstract String whatAmI();
-
     /**
      * @param gameplay
      * @param unit

@@ -14,11 +14,10 @@ public class Monster extends Enemy {
 
     @Override
     public void turn(Position playerPosition, Gameplay gameplay) {
-        if (Util.isInRange(playerPosition.getX(), playerPosition.getY()
-                , this.getPosition().getX(), this.getPosition().getY(), visionRange)) {
-            int dx = this.getPosition().getX() - playerPosition.getX();
-            int dy = this.getPosition().getY() - playerPosition.getY();
-            if (dx > dy) {
+        if (Util.isInRange(playerPosition, getPosition(), visionRange)) {
+            int dx = getPosition().getX() - playerPosition.getX();
+            int dy = getPosition().getY() - playerPosition.getY();
+            if (Math.abs(dx) > Math.abs(dy)) {
                 if (dx > 0) {
                     gameplay.monsterMove(this, this.getPosition().getX() - 1, this.getPosition().getY());
                 } else {

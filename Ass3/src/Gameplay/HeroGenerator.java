@@ -1,4 +1,4 @@
-package Utils;
+package Gameplay;
 
 import Units.Mage;
 import Units.Player;
@@ -8,8 +8,8 @@ import Units.Warrior;
 import java.util.LinkedList;
 import java.util.List;
 
-public class PlayerChooser {
-    public static List<Player> getPlayer() {
+class HeroGenerator {
+    static List<Player> getHeroes() {
         List<Player> players = new LinkedList<>();
         players.add(new Warrior('@', null, "Jon Snow", 300, 30, 4, 6));
         players.add(new Warrior('@', null, "The Hound", 400, 20, 6, 4));

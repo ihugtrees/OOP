@@ -1,6 +1,7 @@
 package Units;
 
 import Gameplay.*;
+import IO.StringSubject;
 import Utils.RandomGeneratorImpl;
 
 
@@ -32,18 +33,19 @@ public class Mage extends Player {
         else {
             currentMana = currentMana - cost;
             List<Enemy> monstersInRange = gameplay.enemiesInRange(getPosition(), range);
-            if (!monstersInRange.isEmpty())
-                for (int hits = 0; hits < hitTimes; hits++) {
-                    gameplay.handleCombat(this, monstersInRange.get(RandomGeneratorImpl.getInstance().nextInt(monstersInRange.size())), spellPower);
-                }
+            if (!monstersInRange.isEmpty()) {
+                StringSubject.getInstance().notifyObservers(getName() + " cast Blizzard.");
+                for (int hits = 0; hits < hitTimes; hits++)
+                    monstersInRange.get(RandomGeneratorImpl.getInstance().nextInt(monstersInRange.size())).defend(gameplay, this, spellPower, true);
+            }
         }
     }
 
     @Override
-    public void levelUp() {
-        manaPool+=25*level;
-        currentMana = Math.min(currentMana+(manaPool/4),manaPool);
-        spellPower+=10*level;
+    public void levelUp(int health, int attack, int defence) {
+        manaPool += 25 * level;
+        currentMana = Math.min(currentMana + (manaPool / 4), manaPool);
+        spellPower += 10 * level;
     }
 
     public String toString() {

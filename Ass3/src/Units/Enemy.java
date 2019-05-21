@@ -2,6 +2,7 @@ package Units;
 
 import Gameplay.Gameplay;
 import Gameplay.Position;
+import IO.StringSubject;
 
 public abstract class Enemy extends ActiveGameUnit {
     private int experienceValue;
@@ -23,7 +24,10 @@ public abstract class Enemy extends ActiveGameUnit {
 
     @Override
     public void unitApproach(Gameplay gameplay, Player player) {
-        gameplay.handleCombat(player, this, player.attack());
+        StringSubject.getInstance().notifyObservers(player.getName() + " engaged in battle with " + getName() + ":");
+        StringSubject.getInstance().notifyObservers(player.toString());
+        StringSubject.getInstance().notifyObservers(toString());
+        defend(gameplay,player,player.attack(),false);
     }
 
     public String toString() {
@@ -32,7 +36,7 @@ public abstract class Enemy extends ActiveGameUnit {
 
     public void checkIfDead(Gameplay gameplay, ActiveGameUnit attacker) {
         if (currentHealth <= 0)
-            gameplay.handlePlayerKilledEnemy(attacker, this, experienceValue);
+            gameplay.handlePlayerKilledEnemy( attacker,this, experienceValue);
     }
 
     public String whatAmI() {

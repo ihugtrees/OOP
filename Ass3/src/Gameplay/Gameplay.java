@@ -2,10 +2,10 @@ package Gameplay;
 
 import Units.ActiveGameUnit;
 import Units.Enemy;
-import Units.Monster;
 import Units.Player;
-import Utils.PlayerChooser;
+import PlayerChooser;
 import IO.StringSubject;
+import Utils.Util;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -32,16 +32,21 @@ public class Gameplay {
     public Gameplay(List<Level> levels) {
         isOver = false;
         this.levels = levels;
-        possibleCharacters = PlayerChooser.getPlayer();
+        possibleCharacters = HeroGenerator.getHeroes();
         levelidx = 0;
         maxLevel = levels.size();
     }
 
     public void startGame(int playerId) {
+        player = possibleCharacters.get(playerId);
+        loadLevel();
+    }
+
+    private void loadLevel() {
         currentLevel = levels.get(levelidx);
         board = currentLevel.getBoard();
         enemies = currentLevel.getEnemies();
-        this.player = possibleCharacters.get(playerId);
+
         player.setPosition(currentLevel.getPlayerPosition());
         if (board[player.getPosition().getX()][player.getPosition().getY()] == null) {
             board[player.getPosition().getX()][player.getPosition().getY()] = player;
@@ -116,34 +121,6 @@ public class Gameplay {
     }
 
     /**
-     * @param wall
-     * @param unit
-     */
-    void unitToWall(Wall wall, ActiveGameUnit unit) {
-        //TODO: do we need to do something?
-    }
-
-    /**
-     * @param attacker
-     * @param defender
-     */
-    public void handleCombat(ActiveGameUnit attacker, ActiveGameUnit defender, int attack) {
-        StringSubject.getInstance().notifyObservers(attacker.getName() + " engaged in battle with " + defender.getName() + ":");
-        StringSubject.getInstance().notifyObservers(attacker.toString());
-        StringSubject.getInstance().notifyObservers(defender.toString());
-        //int attack = attacker.attack();
-        StringSubject.getInstance().notifyObservers(attacker.getName() + " rolled " + attack + " attack points");
-        int damage = defender.defend(attack);
-        StringSubject.getInstance().notifyObservers(attacker.getName() + " hit " + defender.getName() + " for " + damage + " points");
-        defender.checkIfDead(this,attacker);
-            //TODO: manage death
-            //enemies.remove(defender);
-            //board[defender.getPosition().getX()][defender.getPosition().getY()] = new EmptySpot('.', defender.getPosition());
-
-    }
-
-
-    /**
      * @param x
      * @param y
      */
@@ -162,7 +139,7 @@ public class Gameplay {
      * @param position
      */
     public List<Tile> getEmptyTileInRadius(int radius, Position position) {
-        LinkedList<Tile> emptyTiles = new LinkedList<>();//perhaps nulls?
+        LinkedList<Tile> emptyTiles = new LinkedList<>();
         for (int x = position.getX() - radius < 0 ? 0 : position.getX() - radius;
              x < board.length && x < position.getX() + radius; x++) {
             for (int y = position.getY() - radius < 0 ? 0 : position.getY() - radius;
@@ -198,21 +175,28 @@ public class Gameplay {
         isOver = true;
     }
 
-    public List<Tile> enemiesInRange(Position position, int radius) {
-        LinkedList<Tile> monsters = new LinkedList<>();
-        for (int x = position.getX() - radius < 0 ? 0 : position.getX() - radius;
-             x < board.length && x < position.getX() + radius; x++) {
-            for (int y = position.getY() - radius < 0 ? 0 : position.getY() - radius;
-                 y < board[0].length && y < position.getY() + radius; y++) {
-                if (!board[x][y].isMovable()) {
-                    monsters.add(board[x][y]);
-                }
-            }
-        }
+    public List<Enemy> enemiesInRange(Position position, int radius) {
+        LinkedList<Enemy> monsters = new LinkedList<>();
+        for (Enemy e : enemies)
+            if (Util.isInRange(e.getPosition(), position, radius))
+                monsters.add(e);
         return monsters;
     }
 
     public void handlePlayerKilledEnemy(ActiveGameUnit attacker, Enemy enemy, int exp) {
-        attacker.addExperience(exp);
+        player.addExperience(exp);
+        Position pos = enemy.getPosition();
+        board[pos.getX()][pos.getY()] = new EmptySpot('.', pos);
+        enemies.remove(enemy);
+        if (enemies.isEmpty())
+            nextLevel();
+    }
+
+    private void nextLevel() {
+        levelidx++;
+        if (levelidx < levels.size())
+            loadLevel();
+        else
+            isOver = true;
     }
 }

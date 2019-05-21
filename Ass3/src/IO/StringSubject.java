@@ -18,7 +18,7 @@ public class StringSubject {
         return ourInstance;
     }
 
-    public void addObserver(StringObserver stringObserver) {
+    void addObserver(StringObserver stringObserver) {
         observers.add(stringObserver);
     }
 

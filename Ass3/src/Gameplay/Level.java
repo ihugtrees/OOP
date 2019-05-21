@@ -115,23 +115,15 @@ public class Level {
         return lines;
     }
 
-    public Position getPlayerPosition() {
+    Position getPlayerPosition() {
         return playerPosition;
     }
 
-    public void setPlayerPosition(Position playerPosition) {
-        this.playerPosition = playerPosition;
-    }
-
-    public List<Enemy> getEnemies() {
+    List<Enemy> getEnemies() {
         return enemies;
     }
 
-    public void setEnemies(List<Enemy> enemies) {
-        this.enemies = enemies;
-    }
-
-    public Tile[][] getBoard() {
+    Tile[][] getBoard() {
         return board;
     }
 }

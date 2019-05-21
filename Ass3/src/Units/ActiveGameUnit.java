@@ -28,22 +28,27 @@ public abstract class ActiveGameUnit extends Tile {
     }
 
     public int attack() {
-        return RandomGeneratorImpl.getInstance().nextInt(attack);
+        int atk = RandomGeneratorImpl.getInstance().nextInt(attack);
+        StringSubject.getInstance().notifyObservers(getName() + " rolled " + atk + " attack points");
+        return atk;
     }
 
     /**
      * @param attack - the attacking points of monster
-     * @return - damage done to unit
      */
-    public int defend(int attack) {
+    void defend(Gameplay gameplay, ActiveGameUnit attacker, int attack, boolean ability) {
+
         int defendPoints = RandomGeneratorImpl.getInstance().nextInt(defence);
-        StringSubject.getInstance().notifyObservers(this.getName() + " rolled " + defendPoints + " defense points");
+        StringSubject.getInstance().notifyObservers(this.getName() + " rolled " + defendPoints + " defense points.");
 
         int damage = attack - defendPoints;
         if (damage < 0)
             damage = 0;
+        String s = ability ? " ability damage." : " points.";
+        StringSubject.getInstance().notifyObservers(attacker.getName() + " hit " + getName() + " for " + damage + s);
+
         currentHealth = currentHealth - damage;
-        return damage;
+        checkIfDead(gameplay, attacker);
     }
 
     public boolean isMovable() {

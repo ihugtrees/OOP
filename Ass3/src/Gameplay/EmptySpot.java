@@ -22,9 +22,4 @@ public class EmptySpot extends Tile {
     public boolean isMovable() {
         return true;
     }
-
-    @Override
-    public String whatAmI() {
-        return "empty";
-    }
 }

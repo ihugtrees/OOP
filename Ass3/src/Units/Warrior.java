@@ -2,6 +2,7 @@ package Units;
 
 import Gameplay.Gameplay;
 import Gameplay.Position;
+import IO.StringSubject;
 
 public class Warrior extends Player {
 
@@ -19,15 +20,17 @@ public class Warrior extends Player {
             System.out.println("Can't use ability yet");
         else {
             remaining = cooldown;
+            int tmp = currentHealth;
             currentHealth = Math.min(currentHealth + (2 * defence), healthPool);
+            StringSubject.getInstance().notifyObservers(getName() + " cast Heal, healing for " + (currentHealth - tmp));
         }
     }
 
     @Override
-    public void levelUp() {
+    public void levelUp(int health, int attack, int defence) {
         remaining = 0;
         healthPool += (5 * level);
-        defence += level;
+        this.defence += level;
     }
 
     public String toString() {
