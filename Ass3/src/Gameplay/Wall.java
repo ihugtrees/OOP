@@ -24,4 +24,9 @@ public class Wall extends Tile {
     public boolean isMovable() {
         return false;
     }
+
+    @Override
+    public String whatAmI() {
+        return "wall";
+    }
 }

@@ -1,0 +1,438 @@
+Select player:
+1. Jon Snow		Health: 300		Attack damage: 30		Defense: 4
+		Level: 1		Experience: 0/50		Ability cooldown: 6		Remaining: 0
+2. The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+3. Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+4. Thoros of Myr		Health: 250		Attack damage: 25		Defense: 3
+		Level: 1		Experience: 0/50		SpellPower: 20		Mana: 37/150
+5. Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+6. Bronn		Health: 250		Attack damage: 35		Defense: 3
+		Level: 1		Experience: 0/50		Energy: 100/100
+2
+You have selected:
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Use w/s/a/d to move.
+Use e for special ability or q to pass.
+####################
+#@......s..........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..s......q....M...#
+#..............C...#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+Bonus "Trap" engaged in battle with The Hound:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Bonus "Trap" rolled 0 attack points.
+The Hound rolled 2 defense points.
+Bonus "Trap" hit The Hound for 0 damage.
+####################
+#.@......s.........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..........q...M...#
+#..s............C..#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+Bonus "Trap" engaged in battle with The Hound:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Bonus "Trap" rolled 0 attack points.
+The Hound rolled 5 defense points.
+Bonus "Trap" hit The Hound for 0 damage.
+####################
+#..@...............#
+#........s.........#
+#..........q.......#
+#..................#
+#...............M..#
+#...s......q....C..#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+Bonus "Trap" engaged in battle with The Hound:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Bonus "Trap" rolled 0 attack points.
+The Hound rolled 0 defense points.
+Bonus "Trap" hit The Hound for 0 damage.
+####################
+#...@..............#
+#..........q.......#
+#........s.........#
+#...............M..#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+####################
+#....@.............#
+#.........q........#
+#........s......M..#
+#..................#
+#..................#
+#...s........q..C..#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+####################
+#.....@............#
+#........sq........#
+#..............M...#
+#..................#
+#..................#
+#....s.......q...C.#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+####################
+#......@...........#
+#.......sq.........#
+#..............M...#
+#..................#
+#..................#
+#....s......q....C.#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Lannister Solider rolled 3 attack points.
+The Hound rolled 4 defense points.
+Lannister Solider hit The Hound for 0 damage.
+####################
+#.......@q.........#
+#.......s......M...#
+#B.................#
+#...B..............#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+The Hound engaged in battle with Queen's Guard:
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+The Hound rolled 10 attack points.
+Queen's Guard rolled 13 defense points.
+The Hound hit Queen's Guard for 0 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Lannister Solider rolled 1 attack points.
+The Hound rolled 0 defense points.
+Lannister Solider hit The Hound for 1 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+The Hound		Health: 399		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Queen's Guard rolled 14 attack points.
+The Hound rolled 4 defense points.
+Queen's Guard hit The Hound for 10 damage.
+####################
+#.......@q.....M...#
+#.......s..........#
+#B.................#
+#...B..............#
+#..................#
+#....s.....q.....C.#
+####################
+
+
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+d
+The Hound engaged in battle with Queen's Guard:
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+The Hound rolled 18 attack points.
+Queen's Guard rolled 6 defense points.
+The Hound hit Queen's Guard for 12 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Lannister Solider rolled 6 attack points.
+The Hound rolled 1 defense points.
+Lannister Solider hit The Hound for 5 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 388		Attack damage: 20		Defense: 15
+The Hound		Health: 384		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Queen's Guard rolled 3 attack points.
+The Hound rolled 5 defense points.
+Queen's Guard hit The Hound for 0 damage.
+####################
+#.......@q....M....#
+#.......s..........#
+#..................#
+#..................#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 384		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+e
+The Hound cast Heal, healing for 12
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 396		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+Lannister Solider rolled 3 attack points.
+The Hound rolled 2 defense points.
+Lannister Solider hit The Hound for 1 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 388		Attack damage: 20		Defense: 15
+The Hound		Health: 395		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+Queen's Guard rolled 10 attack points.
+The Hound rolled 4 defense points.
+Queen's Guard hit The Hound for 6 damage.
+####################
+#.......@q...M.....#
+#.......s..........#
+#..................#
+#..................#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+d
+The Hound engaged in battle with Queen's Guard:
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+Queen's Guard		Health: 388		Attack damage: 20		Defense: 15
+The Hound rolled 6 attack points.
+Queen's Guard rolled 3 defense points.
+The Hound hit Queen's Guard for 3 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+Lannister Solider rolled 1 attack points.
+The Hound rolled 4 defense points.
+Lannister Solider hit The Hound for 0 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 389		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+Queen's Guard rolled 7 attack points.
+The Hound rolled 2 defense points.
+Queen's Guard hit The Hound for 5 damage.
+####################
+#.......@q..M......#
+#.......s..........#
+#..................#
+#..................#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 384		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+d
+The Hound engaged in battle with Queen's Guard:
+The Hound		Health: 384		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 2
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound rolled 9 attack points.
+Queen's Guard rolled 9 defense points.
+The Hound hit Queen's Guard for 0 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 384		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 2
+Lannister Solider rolled 6 attack points.
+The Hound rolled 2 defense points.
+Lannister Solider hit The Hound for 4 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 380		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 2
+Queen's Guard rolled 6 attack points.
+The Hound rolled 3 defense points.
+Queen's Guard hit The Hound for 3 damage.
+####################
+#.......@q.M.......#
+#.......s..........#
+#..................#
+#..................#
+#..................#
+#....s......q...C..#
+####################
+
+
+The Hound		Health: 377		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 2
+s
+The Hound engaged in battle with Lannister Solider:
+The Hound		Health: 377		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 1
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound rolled 1 attack points.
+Lannister Solider rolled 1 defense points.
+The Hound hit Lannister Solider for 0 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound		Health: 377		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 1
+Lannister Solider rolled 1 attack points.
+The Hound rolled 3 defense points.
+Lannister Solider hit The Hound for 0 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 377		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 1
+Queen's Guard rolled 17 attack points.
+The Hound rolled 5 defense points.
+Queen's Guard hit The Hound for 12 damage.
+####################
+#.......@qM........#
+#.......s..........#
+#..................#
+#..................#
+#....s.............#
+#...........q...C..#
+####################
+
+
+The Hound		Health: 365		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 1
+s
+The Hound engaged in battle with Lannister Solider:
+The Hound		Health: 365		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+The Hound rolled 10 attack points.
+Lannister Solider rolled 1 defense points.
+The Hound hit Lannister Solider for 9 damage.
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 71		Attack damage: 8		Defense: 3
+The Hound		Health: 365		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Lannister Solider rolled 3 attack points.
+The Hound rolled 1 defense points.
+Lannister Solider hit The Hound for 2 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 363		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+Queen's Guard rolled 16 attack points.
+The Hound rolled 0 defense points.
+Queen's Guard hit The Hound for 16 damage.
+####################
+#.......@qM........#
+#...B...s..........#
+#..................#
+#..B...............#
+#....s.............#
+#...........q...C..#
+####################
+
+
+The Hound		Health: 347		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+e
+The Hound cast Heal, healing for 12
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 71		Attack damage: 8		Defense: 3
+The Hound		Health: 359		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+Lannister Solider rolled 1 attack points.
+The Hound rolled 2 defense points.
+Lannister Solider hit The Hound for 0 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 359		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+Queen's Guard rolled 16 attack points.
+The Hound rolled 2 defense points.
+Queen's Guard hit The Hound for 14 damage.
+####################
+#.......@qM........#
+#...B...s..........#
+#..................#
+#..B...............#
+#..................#
+#....s.....q....C..#
+####################
+
+
+The Hound		Health: 345		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 4
+e
+The Hound tried to cast Heal, but there is a cool-down: 3
+Lannister Solider engaged in battle with The Hound:
+Lannister Solider		Health: 71		Attack damage: 8		Defense: 3
+The Hound		Health: 345		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+Lannister Solider rolled 6 attack points.
+The Hound rolled 5 defense points.
+Lannister Solider hit The Hound for 1 damage.
+Queen's Guard engaged in battle with The Hound:
+Queen's Guard		Health: 385		Attack damage: 20		Defense: 15
+The Hound		Health: 344		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3
+Queen's Guard rolled 1 attack points.
+The Hound rolled 4 defense points.
+Queen's Guard hit The Hound for 0 damage.
+####################
+#.......@qM........#
+#.......s..........#
+#..................#
+#..................#
+#...............C..#
+#.....s....q.......#
+####################
+
+
+The Hound		Health: 344		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 3

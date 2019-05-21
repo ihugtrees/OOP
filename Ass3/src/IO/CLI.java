@@ -5,12 +5,12 @@ import Gameplay.Gameplay;
 public class CLI {
 
 	private Gameplay gameplay;
-	ActionReader actionReader;
+	private ActionReader actionReader;
 	public CLI(Gameplay gameplay,ActionReader actionReader)
 	{
 		this.actionReader=actionReader;
 		this.gameplay = gameplay;
-		StringSubject.getInstance().addObserver((s)->System.out.println(s));
+		StringSubject.getInstance().addObserver(System.out::println);
 
 	}
 	public void startGame(){

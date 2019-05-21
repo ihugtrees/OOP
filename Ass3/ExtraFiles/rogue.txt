@@ -1,0 +1,1090 @@
+Select player:
+1. Jon Snow		Health: 300		Attack damage: 30		Defense: 4
+		Level: 1		Experience: 0/50		Ability cooldown: 6		Remaining: 0
+2. The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+3. Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+4. Thoros of Myr		Health: 250		Attack damage: 25		Defense: 3
+		Level: 1		Experience: 0/50		SpellPower: 20		Mana: 37/150
+5. Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+6. Bronn		Health: 250		Attack damage: 35		Defense: 3
+		Level: 1		Experience: 0/50		Energy: 100/100
+5
+You have selected:
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+Use w/s/a/d to move.
+Use e for special ability or q to pass.
+####################
+#@......s..........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..s......q....M...#
+#..............C...#
+####################
+
+
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+d
+Bonus "Trap" engaged in battle with Arya Stark:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+Bonus "Trap" rolled 0 attack points.
+Arya Stark rolled 1 defense points.
+Bonus "Trap" hit Arya Stark for 0 damage.
+####################
+#.@......s.........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..........q...M...#
+#..s............C..#
+####################
+
+
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+d
+Bonus "Trap" engaged in battle with Arya Stark:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+Bonus "Trap" rolled 0 attack points.
+Arya Stark rolled 1 defense points.
+Bonus "Trap" hit Arya Stark for 0 damage.
+####################
+#..@...............#
+#........s.........#
+#..........q.......#
+#..................#
+#...............M..#
+#...s......q....C..#
+####################
+
+
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+s
+Arya Stark engaged in battle with Bonus "Trap":
+Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Arya Stark rolled 20 attack points.
+Bonus "Trap" rolled 0 defense points.
+Arya Stark hit Bonus "Trap" for 20 damage.
+Bonus "Trap" died. Arya Stark gained 250 experience!
+Level up: +20 Health, +16 Attack, +4 Defense
+Level up: +30 Health, +24 Attack, +6 Defense
+####################
+#..@...............#
+#........s.q.......#
+#..................#
+#...............M..#
+#..................#
+#....s......q...C..#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+s
+####################
+#..................#
+#..@....s.q........#
+#...............M..#
+#..................#
+#..................#
+#...s........q..C..#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+d
+####################
+#.......s..........#
+#...@......q.......#
+#................M.#
+#..................#
+#..................#
+#...s.......q...C..#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+s
+####################
+#......s...........#
+#..........q.....M.#
+#...@..............#
+#..................#
+#...s..............#
+#...........q..C...#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+d
+####################
+#..................#
+#......s..q......M.#
+#..B.@.............#
+#...s..............#
+#..............C...#
+#...........q......#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+a
+Bonus "Trap" engaged in battle with Arya Stark:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+Bonus "Trap" rolled 0 attack points.
+Arya Stark rolled 4 defense points.
+Bonus "Trap" hit Arya Stark for 0 damage.
+Lannister Solider engaged in battle with Arya Stark:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+Lannister Solider rolled 1 attack points.
+Arya Stark rolled 10 defense points.
+Lannister Solider hit Arya Stark for 0 damage.
+####################
+#..................#
+#.....s..........M.#
+#..B@.....q........#
+#...s..............#
+#.............C....#
+#...........q......#
+####################
+
+
+Arya Stark		Health: 200		Attack damage: 80		Defense: 12
+		Level: 3		Experience: 100/150		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Bonus "Trap" rolled 0 defense points.
+Arya Stark hit Bonus "Trap" for 80 ability damage.
+Level up: +40 Health, +32 Attack, +8 Defense
+Level up: +50 Health, +40 Attack, +10 Defense
+Bonus "Trap" died. Arya Stark gained 250 experience!
+Lannister Solider rolled 1 defense points.
+Arya Stark hit Lannister Solider for 151 ability damage.
+Lannister Solider died. Arya Stark gained 25 experience!
+####################
+#..................#
+#....s............M#
+#...@....q.........#
+#..................#
+#...........q.C....#
+#..................#
+####################
+
+
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 25/250		Energy: 100/100
+d
+Lannister Solider engaged in battle with Arya Stark:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 25/250		Energy: 100/100
+Lannister Solider rolled 1 attack points.
+Arya Stark rolled 29 defense points.
+Lannister Solider hit Arya Stark for 0 damage.
+####################
+#..................#
+#....s............M#
+#....@..q..........#
+#..................#
+#............C.....#
+#...........q......#
+####################
+
+
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 25/250		Energy: 100/100
+d
+####################
+#..................#
+#.................M#
+#....s@q...........#
+#..................#
+#..................#
+#..........q.C.....#
+####################
+
+
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 25/250		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Lannister Solider rolled 2 defense points.
+Arya Stark hit Lannister Solider for 150 ability damage.
+Lannister Solider died. Arya Stark gained 25 experience!
+Queen's Guard rolled 13 defense points.
+Arya Stark hit Queen's Guard for 139 ability damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 261		Attack damage: 20		Defense: 15
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 80/100
+Queen's Guard rolled 9 attack points.
+Arya Stark rolled 24 defense points.
+Queen's Guard hit Arya Stark for 0 damage.
+####################
+#.................M#
+#..................#
+#.....@q...........#
+#..................#
+#..................#
+#..........qC......#
+####################
+
+
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 80/100
+d
+Arya Stark engaged in battle with Queen's Guard:
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 90/100
+Queen's Guard		Health: 261		Attack damage: 20		Defense: 15
+Arya Stark rolled 89 attack points.
+Queen's Guard rolled 1 defense points.
+Arya Stark hit Queen's Guard for 88 damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 173		Attack damage: 20		Defense: 15
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 90/100
+Queen's Guard rolled 7 attack points.
+Arya Stark rolled 20 defense points.
+Queen's Guard hit Arya Stark for 0 damage.
+####################
+#..................#
+#.................M#
+#.....@q...........#
+#..................#
+#..................#
+#..........qC......#
+####################
+
+
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 90/100
+d
+Arya Stark engaged in battle with Queen's Guard:
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 100/100
+Queen's Guard		Health: 173		Attack damage: 20		Defense: 15
+Arya Stark rolled 17 attack points.
+Queen's Guard rolled 9 defense points.
+Arya Stark hit Queen's Guard for 8 damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 165		Attack damage: 20		Defense: 15
+Arya Stark		Health: 290		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 100/100
+Queen's Guard rolled 3 attack points.
+Arya Stark rolled 2 defense points.
+Queen's Guard hit Arya Stark for 1 damage.
+####################
+#.................M#
+#..................#
+#.....@q...........#
+#..................#
+#..........q.......#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 289		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Queen's Guard rolled 0 defense points.
+Arya Stark hit Queen's Guard for 152 ability damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 13		Attack damage: 20		Defense: 15
+Arya Stark		Health: 289		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 80/100
+Queen's Guard rolled 4 attack points.
+Arya Stark rolled 1 defense points.
+Queen's Guard hit Arya Stark for 3 damage.
+####################
+#................M.#
+#..................#
+#.....@q...........#
+#..........q.......#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 50/250		Energy: 80/100
+e
+Arya Stark cast Fan of Knives.
+Queen's Guard rolled 7 defense points.
+Arya Stark hit Queen's Guard for 145 ability damage.
+Queen's Guard died. Arya Stark gained 100 experience!
+####################
+#................M.#
+#..................#
+#.....@............#
+#..........q.......#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 70/100
+d
+####################
+#..................#
+#................M.#
+#......@...........#
+#.........q........#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 80/100
+e
+Arya Stark cast Fan of Knives.
+####################
+#..................#
+#...............M..#
+#......@...........#
+#........q.........#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 70/100
+d
+####################
+#..................#
+#................M.#
+#.......@q.........#
+#..................#
+#..................#
+#............C.....#
+####################
+
+
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 80/100
+e
+Arya Stark cast Fan of Knives.
+Queen's Guard rolled 5 defense points.
+Arya Stark hit Queen's Guard for 147 ability damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 253		Attack damage: 20		Defense: 15
+Arya Stark		Health: 286		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 70/100
+Queen's Guard rolled 16 attack points.
+Arya Stark rolled 12 defense points.
+Queen's Guard hit Arya Stark for 4 damage.
+####################
+#..................#
+#................M.#
+#.......@q.........#
+#..................#
+#..................#
+#............C.....#
+####################
+
+
+Arya Stark		Health: 282		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 70/100
+e
+Arya Stark cast Fan of Knives.
+Queen's Guard rolled 0 defense points.
+Arya Stark hit Queen's Guard for 152 ability damage.
+Queen's Guard engaged in battle with Arya Stark:
+Queen's Guard		Health: 101		Attack damage: 20		Defense: 15
+Arya Stark		Health: 282		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 60/100
+Queen's Guard rolled 6 attack points.
+Arya Stark rolled 14 defense points.
+Queen's Guard hit Arya Stark for 0 damage.
+####################
+#................M.#
+#..................#
+#.......@q.........#
+#..................#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 282		Attack damage: 152		Defense: 30
+		Level: 5		Experience: 150/250		Energy: 60/100
+e
+Arya Stark cast Fan of Knives.
+Queen's Guard rolled 10 defense points.
+Arya Stark hit Queen's Guard for 142 ability damage.
+Level up: +60 Health, +48 Attack, +12 Defense
+Queen's Guard died. Arya Stark gained 100 experience!
+####################
+#...............M..#
+#..................#
+#.......@..........#
+#..................#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+d
+####################
+#................M.#
+#..................#
+#........@.........#
+#..................#
+#..................#
+#...........C......#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+d
+####################
+#................M.#
+#..................#
+#.........@........#
+#..................#
+#..................#
+#............C.....#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+s
+####################
+#.................M#
+#..................#
+#..................#
+#.........@........#
+#..................#
+#............C.....#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+d
+####################
+#.................M#
+#..................#
+#..................#
+#..........@.......#
+#..................#
+#.............C....#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+s
+####################
+#.................M#
+#..................#
+#..................#
+#..................#
+#..........@.......#
+#.............C....#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+d
+####################
+#................M.#
+#..................#
+#..................#
+#..................#
+#...........@......#
+#............C.....#
+####################
+
+
+Arya Stark		Health: 350		Attack damage: 200		Defense: 42
+		Level: 6		Experience: 0/300		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Queen Cersei rolled 6 defense points.
+Arya Stark hit Queen Cersei for 194 ability damage.
+Level up: +70 Health, +56 Attack, +14 Defense
+Level up: +80 Health, +64 Attack, +16 Defense
+Queen Cersei died. Arya Stark gained 1000 experience!
+####################
+#................M.#
+#..................#
+#..................#
+#..................#
+#...........@......#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 100/100
+w
+####################
+#...............M..#
+#..................#
+#..................#
+#...........@......#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 100/100
+w
+####################
+#..............M...#
+#..................#
+#...........@......#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 100/100
+d
+####################
+#..................#
+#..............M...#
+#............@.....#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 100/100
+w
+####################
+#..................#
+#............@M....#
+#..................#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+The Mountain rolled 8 defense points.
+Arya Stark hit The Mountain for 312 ability damage.
+The Mountain engaged in battle with Arya Stark:
+The Mountain		Health: 688		Attack damage: 60		Defense: 25
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 80/100
+The Mountain rolled 41 attack points.
+Arya Stark rolled 49 defense points.
+The Mountain hit Arya Stark for 0 damage.
+####################
+#..................#
+#............@M....#
+#..................#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 80/100
+e
+Arya Stark cast Fan of Knives.
+The Mountain rolled 20 defense points.
+Arya Stark hit The Mountain for 300 ability damage.
+The Mountain engaged in battle with Arya Stark:
+The Mountain		Health: 388		Attack damage: 60		Defense: 25
+Arya Stark		Health: 500		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 70/100
+The Mountain rolled 56 attack points.
+Arya Stark rolled 49 defense points.
+The Mountain hit Arya Stark for 7 damage.
+####################
+#..................#
+#............@M....#
+#..................#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 493		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 70/100
+e
+Arya Stark cast Fan of Knives.
+The Mountain rolled 2 defense points.
+Arya Stark hit The Mountain for 318 ability damage.
+The Mountain engaged in battle with Arya Stark:
+The Mountain		Health: 70		Attack damage: 60		Defense: 25
+Arya Stark		Health: 493		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 60/100
+The Mountain rolled 53 attack points.
+Arya Stark rolled 37 defense points.
+The Mountain hit Arya Stark for 16 damage.
+####################
+#..................#
+#............@M....#
+#..................#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 477		Attack damage: 320		Defense: 72
+		Level: 8		Experience: 350/400		Energy: 60/100
+e
+Arya Stark cast Fan of Knives.
+The Mountain rolled 18 defense points.
+Arya Stark hit The Mountain for 302 ability damage.
+Level up: +90 Health, +72 Attack, +18 Defense
+Level up: +100 Health, +80 Attack, +20 Defense
+The Mountain died. Arya Stark gained 500 experience!
+####################
+#........w.........#
+#..................#
+#.....g.....b......#
+#....z.......z.....#
+#..................#
+#.......B@B........#
+####################
+
+
+Arya Stark		Health: 690		Attack damage: 472		Defense: 110
+		Level: 10		Experience: 0/500		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Bonus "Trap" rolled 0 defense points.
+Arya Stark hit Bonus "Trap" for 472 ability damage.
+Bonus "Trap" died. Arya Stark gained 250 experience!
+Bonus "Trap" rolled 0 defense points.
+Arya Stark hit Bonus "Trap" for 472 ability damage.
+Level up: +110 Health, +88 Attack, +22 Defense
+Bonus "Trap" died. Arya Stark gained 250 experience!
+####################
+#..................#
+#........w..b......#
+#....z.............#
+#.....g.......z....#
+#..................#
+#........@.........#
+####################
+
+
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 100/100
+w
+####################
+#..................#
+#...........b......#
+#...z....w.........#
+#......g.......z...#
+#........@.........#
+#..................#
+####################
+
+
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 100/100
+w
+White Walker engaged in battle with Arya Stark:
+White Walker		Health: 2000		Attack damage: 150		Defense: 50
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 100/100
+White Walker rolled 24 attack points.
+Arya Stark rolled 24 defense points.
+White Walker hit Arya Stark for 0 damage.
+####################
+#..................#
+#..........b.......#
+#...z....w.........#
+#.......g@......z..#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+White Walker rolled 17 defense points.
+Arya Stark hit White Walker for 543 ability damage.
+Giant-Wright rolled 0 defense points.
+Arya Stark hit Giant-Wright for 560 ability damage.
+White Walker engaged in battle with Arya Stark:
+White Walker		Health: 1457		Attack damage: 150		Defense: 50
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 80/100
+White Walker rolled 51 attack points.
+Arya Stark rolled 117 defense points.
+White Walker hit Arya Stark for 0 damage.
+Giant-Wright engaged in battle with Arya Stark:
+Giant-Wright		Health: 940		Attack damage: 100		Defense: 40
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 80/100
+Giant-Wright rolled 9 attack points.
+Arya Stark rolled 72 defense points.
+Giant-Wright hit Arya Stark for 0 damage.
+####################
+#..................#
+#..................#
+#..z.....w.b....z..#
+#.......g@.........#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 80/100
+e
+Arya Stark cast Fan of Knives.
+White Walker rolled 49 defense points.
+Arya Stark hit White Walker for 511 ability damage.
+Giant-Wright rolled 1 defense points.
+Arya Stark hit Giant-Wright for 559 ability damage.
+White Walker engaged in battle with Arya Stark:
+White Walker		Health: 946		Attack damage: 150		Defense: 50
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 70/100
+White Walker rolled 61 attack points.
+Arya Stark rolled 78 defense points.
+White Walker hit Arya Stark for 0 damage.
+Giant-Wright engaged in battle with Arya Stark:
+Giant-Wright		Health: 381		Attack damage: 100		Defense: 40
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 70/100
+Giant-Wright rolled 37 attack points.
+Arya Stark rolled 78 defense points.
+Giant-Wright hit Arya Stark for 0 damage.
+####################
+#..................#
+#..................#
+#...z....wb.....z..#
+#.......g@.........#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 0/550		Energy: 70/100
+e
+Arya Stark cast Fan of Knives.
+White Walker rolled 11 defense points.
+Arya Stark hit White Walker for 549 ability damage.
+Giant-Wright rolled 13 defense points.
+Arya Stark hit Giant-Wright for 547 ability damage.
+Giant-Wright died. Arya Stark gained 500 experience!
+Bear-Wright rolled 21 defense points.
+Arya Stark hit Bear-Wright for 539 ability damage.
+White Walker engaged in battle with Arya Stark:
+White Walker		Health: 397		Attack damage: 150		Defense: 50
+Arya Stark		Health: 800		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 500/550		Energy: 60/100
+White Walker rolled 141 attack points.
+Arya Stark rolled 25 defense points.
+White Walker hit Arya Stark for 116 damage.
+####################
+#..................#
+#..................#
+#...z....w.......z.#
+#........@b........#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 684		Attack damage: 560		Defense: 132
+		Level: 11		Experience: 500/550		Energy: 60/100
+e
+Arya Stark cast Fan of Knives.
+White Walker rolled 42 defense points.
+Arya Stark hit White Walker for 518 ability damage.
+Level up: +120 Health, +96 Attack, +24 Defense
+Level up: +130 Health, +104 Attack, +26 Defense
+White Walker died. Arya Stark gained 1000 experience!
+Bear-Wright rolled 11 defense points.
+Arya Stark hit Bear-Wright for 749 ability damage.
+Bear-Wright died. Arya Stark gained 250 experience!
+####################
+#..................#
+#..................#
+#...z.............z#
+#........@.........#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+w
+####################
+#..................#
+#..................#
+#...z....@.......z.#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+a
+####################
+#..................#
+#..................#
+#...z...@........z.#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+a
+####################
+#..................#
+#..................#
+#....z.@..........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+a
+Wright engaged in battle with Arya Stark:
+Wright		Health: 600		Attack damage: 30		Defense: 15
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+Wright rolled 7 attack points.
+Arya Stark rolled 42 defense points.
+Wright hit Arya Stark for 0 damage.
+####################
+#..................#
+#..................#
+#....z@...........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1050		Attack damage: 760		Defense: 182
+		Level: 13		Experience: 600/650		Energy: 100/100
+e
+Arya Stark cast Fan of Knives.
+Wright rolled 11 defense points.
+Arya Stark hit Wright for 749 ability damage.
+Level up: +140 Health, +112 Attack, +28 Defense
+Wright died. Arya Stark gained 100 experience!
+####################
+#..................#
+#..................#
+#.....@...........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#......@..........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#.......@.........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#........@........z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#.........@.......z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#..........@......z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#...........@.....z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#............@....z#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#.............@..z.#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+####################
+#..................#
+#..................#
+#..............@z..#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+Arya Stark engaged in battle with Wright:
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+Wright		Health: 600		Attack damage: 30		Defense: 15
+Arya Stark rolled 433 attack points.
+Wright rolled 6 defense points.
+Arya Stark hit Wright for 427 damage.
+Wright engaged in battle with Arya Stark:
+Wright		Health: 173		Attack damage: 30		Defense: 15
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+Wright rolled 27 attack points.
+Arya Stark rolled 166 defense points.
+Wright hit Arya Stark for 0 damage.
+####################
+#..................#
+#..................#
+#..............@z..#
+#..................#
+#..................#
+#..................#
+####################
+
+
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+d
+Arya Stark engaged in battle with Wright:
+Arya Stark		Health: 1190		Attack damage: 872		Defense: 210
+		Level: 14		Experience: 50/700		Energy: 100/100
+Wright		Health: 173		Attack damage: 30		Defense: 15
+Arya Stark rolled 223 attack points.
+Wright rolled 7 defense points.
+Arya Stark hit Wright for 216 damage.
+Wright died. Arya Stark gained 100 experience!
+Game is finished. You won!
+
+Process finished with exit code 0

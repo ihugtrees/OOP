@@ -1,0 +1,493 @@
+Select player:
+1. Jon Snow		Health: 300		Attack damage: 30		Defense: 4
+		Level: 1		Experience: 0/50		Ability cooldown: 6		Remaining: 0
+2. The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+3. Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+4. Thoros of Myr		Health: 250		Attack damage: 25		Defense: 3
+		Level: 1		Experience: 0/50		SpellPower: 20		Mana: 37/150
+5. Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+6. Bronn		Health: 250		Attack damage: 35		Defense: 3
+		Level: 1		Experience: 0/50		Energy: 100/100
+7. Leeroy Jenkins		Health: 15		Attack damage: 15		Defense: 1200
+		Level: 1		Experience: 0/50		Ability cooldown: 1		Remaining: 0
+3
+You have selected:
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+Use w/s/a/d to move.
+Use e for special ability or q to pass.
+####################
+#@......s..........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..s......q....M...#
+#..............C...#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+d
+####################
+#.@......s.........#
+#..B...............#
+#.......B..........#
+#..s...............#
+#.........qq...M...#
+#...............C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 76/300
+d
+####################
+#..@.....s.........#
+#..B...............#
+#..s....B..........#
+#..................#
+#...........q.M....#
+#.........q.....C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 77/300
+d
+####################
+#...@....s.........#
+#..................#
+#..s...............#
+#..................#
+#............q.M...#
+#.........q.....C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 78/300
+d
+####################
+#....@.............#
+#........s.........#
+#..s...............#
+#..............M...#
+#..................#
+#.........q..q...C.#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 79/300
+d
+####################
+#.....@............#
+#.........s........#
+#..................#
+#..s..........M....#
+#............q.....#
+#........q......C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 80/300
+d
+####################
+#......@...........#
+#..........s.......#
+#..................#
+#..s.........q.M...#
+#........q.........#
+#...............C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 81/300
+d
+####################
+#.......@..........#
+#.........s........#
+#..................#
+#..s.....q..q......#
+#..............MC..#
+#..................#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 82/300
+d
+####################
+#..B.....@s........#
+#..................#
+#........q..q......#
+#.s................#
+#..............MC..#
+#....B.............#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 83/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 84/300
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+Melisandre rolled 0 attack points.
+Lannister Solider rolled 2 defense points.
+Melisandre hit Lannister Solider for 0 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 84/300
+Lannister Solider rolled 6 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 6 damage.
+####################
+#..B.....@s........#
+#........q.........#
+#..........q.......#
+#..................#
+#.s...........M....#
+#....B..........C..#
+####################
+
+
+Melisandre		Health: 154		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 84/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 154		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 85/300
+Lannister Solider		Health: 80		Attack damage: 8		Defense: 3
+Melisandre rolled 6 attack points.
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 5 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 75		Attack damage: 8		Defense: 3
+Melisandre		Health: 154		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 85/300
+Lannister Solider rolled 4 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 4 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 150		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 85/300
+Queen's Guard rolled 1 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 1 damage.
+####################
+#........@s........#
+#........q.q.......#
+#..................#
+#..................#
+#s...........M..C..#
+#..................#
+####################
+
+
+Melisandre		Health: 149		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 85/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 149		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 86/300
+Lannister Solider		Health: 75		Attack damage: 8		Defense: 3
+Melisandre rolled 7 attack points.
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 6 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 69		Attack damage: 8		Defense: 3
+Melisandre		Health: 149		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 86/300
+Lannister Solider rolled 1 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 1 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 148		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 86/300
+Queen's Guard rolled 17 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 17 damage.
+####################
+#........@s........#
+#........qq........#
+#..................#
+#............M.....#
+#..............C...#
+#s.................#
+####################
+
+
+Melisandre		Health: 131		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 86/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 131		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 87/300
+Lannister Solider		Health: 69		Attack damage: 8		Defense: 3
+Melisandre rolled 7 attack points.
+Lannister Solider rolled 2 defense points.
+Melisandre hit Lannister Solider for 5 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 64		Attack damage: 8		Defense: 3
+Melisandre		Health: 131		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 87/300
+Lannister Solider rolled 6 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 6 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 125		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 87/300
+Queen's Guard rolled 14 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 14 damage.
+####################
+#........@s........#
+#........qq........#
+#..................#
+#...........M..C...#
+#..................#
+#s.................#
+####################
+
+
+Melisandre		Health: 111		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 87/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 111		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 88/300
+Lannister Solider		Health: 64		Attack damage: 8		Defense: 3
+Melisandre rolled 3 attack points.
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 2 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 62		Attack damage: 8		Defense: 3
+Melisandre		Health: 111		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 88/300
+Lannister Solider rolled 3 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 3 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 108		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 88/300
+Queen's Guard rolled 5 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 5 damage.
+####################
+#........@s........#
+#........qq........#
+#...........M......#
+#..................#
+#..............C...#
+#s.................#
+####################
+
+
+Melisandre		Health: 103		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 88/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 103		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 89/300
+Lannister Solider		Health: 62		Attack damage: 8		Defense: 3
+Melisandre rolled 9 attack points.
+Lannister Solider rolled 0 defense points.
+Melisandre hit Lannister Solider for 9 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 53		Attack damage: 8		Defense: 3
+Melisandre		Health: 103		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 89/300
+Lannister Solider rolled 6 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 6 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 97		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 89/300
+Queen's Guard rolled 15 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 15 damage.
+####################
+#........@s........#
+#........qq........#
+#..........M.......#
+#..............C...#
+#..................#
+#s.................#
+####################
+
+
+Melisandre		Health: 82		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 89/300
+a
+####################
+#.......@s.........#
+#........qq........#
+#.........M........#
+#......B......C....#
+#s..B..............#
+#..................#
+####################
+
+
+Melisandre		Health: 82		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 90/300
+d
+Melisandre engaged in battle with Lannister Solider:
+Melisandre		Health: 82		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 91/300
+Lannister Solider		Health: 53		Attack damage: 8		Defense: 3
+Melisandre rolled 5 attack points.
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 4 damage.
+Lannister Solider engaged in battle with Melisandre:
+Lannister Solider		Health: 49		Attack damage: 8		Defense: 3
+Melisandre		Health: 82		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 91/300
+Lannister Solider rolled 1 attack points.
+Melisandre rolled 0 defense points.
+Lannister Solider hit Melisandre for 1 damage.
+####################
+#.......@s.........#
+#........qq........#
+#.........M........#
+#......B...........#
+#s..B.........C....#
+#..................#
+####################
+
+
+Melisandre		Health: 81		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 91/300
+s
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre		Health: 81		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 92/300
+Queen's Guard rolled 18 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 18 damage.
+####################
+#........s.........#
+#.......@qq........#
+#........M.........#
+#..................#
+#..............C...#
+#s.................#
+####################
+
+
+Melisandre		Health: 63		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 92/300
+d
+Melisandre engaged in battle with Queen's Guard:
+Melisandre		Health: 63		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 93/300
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre rolled 7 attack points.
+Queen's Guard rolled 5 defense points.
+Melisandre hit Queen's Guard for 2 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 398		Attack damage: 20		Defense: 15
+Melisandre		Health: 63		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 93/300
+Queen's Guard rolled 2 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 2 damage.
+####################
+#........s.........#
+#.......@qq........#
+#........M.........#
+#..................#
+#s.................#
+#..............C...#
+####################
+
+
+Melisandre		Health: 61		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 93/300
+d
+Melisandre engaged in battle with Queen's Guard:
+Melisandre		Health: 61		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 94/300
+Queen's Guard		Health: 398		Attack damage: 20		Defense: 15
+Melisandre rolled 0 attack points.
+Queen's Guard rolled 11 defense points.
+Melisandre hit Queen's Guard for 0 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 398		Attack damage: 20		Defense: 15
+Melisandre		Health: 61		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 94/300
+Queen's Guard rolled 16 attack points.
+Melisandre rolled 0 defense points.
+Queen's Guard hit Melisandre for 16 damage.
+####################
+#........s.........#
+#.......@qq........#
+#........M.........#
+#..................#
+#s.................#
+#..............C...#
+####################
+
+
+Melisandre		Health: 45		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 94/300
+s
+The Mountain engaged in battle with Melisandre:
+The Mountain		Health: 1000		Attack damage: 60		Defense: 25
+Melisandre		Health: 45		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 95/300
+The Mountain rolled 14 attack points.
+Melisandre rolled 0 defense points.
+The Mountain hit Melisandre for 14 damage.
+####################
+#........s.........#
+#........qq........#
+#.......@M.........#
+#..................#
+#s.................#
+#..............C...#
+####################
+
+
+Melisandre		Health: 31		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 95/300
+d
+Melisandre engaged in battle with The Mountain:
+Melisandre		Health: 31		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 96/300
+The Mountain		Health: 1000		Attack damage: 60		Defense: 25
+Melisandre rolled 1 attack points.
+The Mountain rolled 7 defense points.
+Melisandre hit The Mountain for 0 damage.
+The Mountain engaged in battle with Melisandre:
+The Mountain		Health: 1000		Attack damage: 60		Defense: 25
+Melisandre		Health: 31		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 96/300
+The Mountain rolled 37 attack points.
+Melisandre rolled 0 defense points.
+The Mountain hit Melisandre for 37 damage.
+Melisandre died.
+You Lost.
+####################
+#........s.........#
+#........qq........#
+#.......XM.........#
+#s.................#
+#..................#
+#..............C...#
+####################

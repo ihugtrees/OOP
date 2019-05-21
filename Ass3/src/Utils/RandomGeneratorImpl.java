@@ -1,7 +1,5 @@
 package Utils;
 
-
-
 import java.util.Random;
 
 public class RandomGeneratorImpl implements RandomGenerator {
@@ -17,6 +15,7 @@ public class RandomGeneratorImpl implements RandomGenerator {
     public static RandomGenerator getInstance() {
         return ourInstance;
     }
+
     public int nextInt(int n) {
         if(!isD)
             return rnd.nextInt(n);

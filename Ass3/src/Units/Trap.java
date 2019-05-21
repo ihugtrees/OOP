@@ -26,7 +26,7 @@ public class Trap extends Enemy {
 		if (ticksCount == relocationTime) {
 			ticksCount = 0;
 			List<Tile> placesToMove = gameplay.getEmptyTileInRadius(relocationRange, this.getPosition());
-			Tile toMove = placesToMove.get(new RandomGeneratorImpl(true).nextInt(placesToMove.size()));
+			Tile toMove = placesToMove.get(RandomGeneratorImpl.getInstance().nextInt(placesToMove.size()));
 			gameplay.monsterMove(this, toMove.getPosition().getX(), toMove.getPosition().getY());
 		} else {
 			ticksCount++;

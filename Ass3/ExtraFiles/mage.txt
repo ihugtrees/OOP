@@ -1,0 +1,661 @@
+Select player:
+1. Jon Snow		Health: 300		Attack damage: 30		Defense: 4
+		Level: 1		Experience: 0/50		Ability cooldown: 6		Remaining: 0
+2. The Hound		Health: 400		Attack damage: 20		Defense: 6
+		Level: 1		Experience: 0/50		Ability cooldown: 4		Remaining: 0
+3. Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+4. Thoros of Myr		Health: 250		Attack damage: 25		Defense: 3
+		Level: 1		Experience: 0/50		SpellPower: 20		Mana: 37/150
+5. Arya Stark		Health: 150		Attack damage: 40		Defense: 2
+		Level: 1		Experience: 0/50		Energy: 100/100
+6. Bronn		Health: 250		Attack damage: 35		Defense: 3
+		Level: 1		Experience: 0/50		Energy: 100/100
+3
+You have selected:
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+Use w/s/a/d to move.
+Use e for special ability or q to pass.
+####################
+#@......s..........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..s......q....M...#
+#..............C...#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 75/300
+d
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 76/300
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 0 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#.@......s.........#
+#..B...............#
+#.......B..........#
+#..........q.......#
+#..........q...M...#
+#..s............C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 76/300
+d
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 77/300
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 0 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#..@...............#
+#........s.........#
+#..........q.......#
+#..................#
+#...............M..#
+#...s......q....C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 77/300
+d
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 78/300
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 0 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#...@..............#
+#..........q.......#
+#........s.........#
+#...............M..#
+#..................#
+#....s......q...C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 78/300
+s
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 79/300
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 0 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#..................#
+#...@.......q......#
+#........s......M..#
+#..................#
+#....s.............#
+#...........q....C.#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 79/300
+d
+####################
+#..................#
+#....@.....q.......#
+#..................#
+#....s...s......M..#
+#..................#
+#............q..C..#
+####################
+
+
+Melisandre		Health: 160		Attack damage: 10		Defense: 1
+		Level: 1		Experience: 0/50		SpellPower: 15		Mana: 80/300
+e
+Melisandre cast Blizzard.
+Lannister Solider rolled 2 defense points.
+Melisandre hit Lannister Solider for 13 ability damage.
+Bonus "Trap" rolled 0 defense points.
+Melisandre hit Bonus "Trap" for 15 ability damage.
+Level up: +20 Health, +10 Attack, +4 Defense
+		+50 maximum mana, +20 spell power
+Level up: +30 Health, +15 Attack, +6 Defense
+		+75 maximum mana, +30 spell power
+Bonus "Trap" died. Melisandre gained 250 experience!
+Lannister Solider rolled 0 defense points.
+Melisandre hit Lannister Solider for 65 ability damage.
+Lannister Solider rolled 2 defense points.
+Melisandre hit Lannister Solider for 63 ability damage.
+Lannister Solider died. Melisandre gained 25 experience!
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 64 ability damage.
+####################
+#..........q.......#
+#....@.............#
+#..................#
+#..................#
+#........s......M..#
+#............q..C..#
+####################
+
+
+Melisandre		Health: 210		Attack damage: 35		Defense: 11
+		Level: 3		Experience: 125/150		SpellPower: 65		Mana: 244/425
+s
+####################
+#...........q......#
+#....B.............#
+#....@.............#
+#...............M..#
+#.......s..........#
+#...........q....C.#
+####################
+
+
+Melisandre		Health: 210		Attack damage: 35		Defense: 11
+		Level: 3		Experience: 125/150		SpellPower: 65		Mana: 245/425
+d
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 210		Attack damage: 35		Defense: 11
+		Level: 3		Experience: 125/150		SpellPower: 65		Mana: 246/425
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 0 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#...........q......#
+#....B.............#
+#.....@............#
+#.......s........M.#
+#..................#
+#...........q...C..#
+####################
+
+
+Melisandre		Health: 210		Attack damage: 35		Defense: 11
+		Level: 3		Experience: 125/150		SpellPower: 65		Mana: 246/425
+d
+####################
+#..........q.......#
+#..................#
+#......@s..........#
+#..................#
+#................M.#
+#............q..C..#
+####################
+
+
+Melisandre		Health: 210		Attack damage: 35		Defense: 11
+		Level: 3		Experience: 125/150		SpellPower: 65		Mana: 247/425
+e
+Melisandre cast Blizzard.
+Bonus "Trap" rolled 0 defense points.
+Melisandre hit Bonus "Trap" for 65 ability damage.
+Level up: +40 Health, +20 Attack, +8 Defense
+		+100 maximum mana, +40 spell power
+Level up: +50 Health, +25 Attack, +10 Defense
+		+125 maximum mana, +50 spell power
+Bonus "Trap" died. Melisandre gained 250 experience!
+Lannister Solider rolled 1 defense points.
+Melisandre hit Lannister Solider for 154 ability damage.
+Lannister Solider died. Melisandre gained 25 experience!
+Queen's Guard rolled 10 defense points.
+Melisandre hit Queen's Guard for 145 ability damage.
+Queen's Guard rolled 5 defense points.
+Melisandre hit Queen's Guard for 150 ability damage.
+Queen's Guard rolled 5 defense points.
+Melisandre hit Queen's Guard for 150 ability damage.
+Queen's Guard died. Melisandre gained 100 experience!
+####################
+#..................#
+#..................#
+#......@...........#
+#..................#
+#................M.#
+#............q..C..#
+####################
+
+
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 511/650
+d
+####################
+#..................#
+#..................#
+#.......@..........#
+#..................#
+#...............C.M#
+#...........q......#
+####################
+
+
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 512/650
+s
+####################
+#..................#
+#..................#
+#..................#
+#.......@.........M#
+#...............C..#
+#..........q.......#
+####################
+
+
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 513/650
+d
+####################
+#..................#
+#..................#
+#..................#
+#........@.........#
+#..........q....C.M#
+#..................#
+####################
+
+
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 514/650
+d
+####################
+#..................#
+#..................#
+#..................#
+#.........@q....C.M#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 515/650
+d
+Melisandre engaged in battle with Queen's Guard:
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 516/650
+Queen's Guard		Health: 400		Attack damage: 20		Defense: 15
+Melisandre rolled 73 attack points.
+Queen's Guard rolled 0 defense points.
+Melisandre hit Queen's Guard for 73 damage.
+Queen's Guard engaged in battle with Melisandre:
+Queen's Guard		Health: 327		Attack damage: 20		Defense: 15
+Melisandre		Health: 300		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 516/650
+Queen's Guard rolled 17 attack points.
+Melisandre rolled 15 defense points.
+Queen's Guard hit Melisandre for 2 damage.
+####################
+#..................#
+#..................#
+#.................M#
+#.........@q....C..#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 298		Attack damage: 80		Defense: 29
+		Level: 5		Experience: 150/250		SpellPower: 155		Mana: 516/650
+e
+Melisandre cast Blizzard.
+Queen's Guard rolled 0 defense points.
+Melisandre hit Queen's Guard for 155 ability damage.
+Queen's Guard rolled 5 defense points.
+Melisandre hit Queen's Guard for 150 ability damage.
+Queen's Guard rolled 2 defense points.
+Melisandre hit Queen's Guard for 153 ability damage.
+Level up: +60 Health, +30 Attack, +12 Defense
+		+150 maximum mana, +60 spell power
+Queen's Guard died. Melisandre gained 100 experience!
+####################
+#..................#
+#.................M#
+#..................#
+#.........@......C.#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 687/800
+d
+####################
+#..................#
+#.................M#
+#..................#
+#..........@.......#
+#................C.#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 688/800
+d
+####################
+#..................#
+#..................#
+#.................M#
+#...........@....C.#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 689/800
+s
+####################
+#..................#
+#..................#
+#................CM#
+#..................#
+#...........@......#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 690/800
+d
+####################
+#..................#
+#..................#
+#...............C.M#
+#..................#
+#............@.....#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 691/800
+d
+####################
+#..................#
+#..................#
+#................M.#
+#...............C..#
+#.............@....#
+#..................#
+####################
+
+
+Melisandre		Health: 360		Attack damage: 110		Defense: 41
+		Level: 6		Experience: 0/300		SpellPower: 215		Mana: 692/800
+e
+Melisandre cast Blizzard.
+Queen Cersei rolled 4 defense points.
+Melisandre hit Queen Cersei for 211 ability damage.
+Level up: +70 Health, +35 Attack, +14 Defense
+		+175 maximum mana, +70 spell power
+Level up: +80 Health, +40 Attack, +16 Defense
+		+200 maximum mana, +80 spell power
+Queen Cersei died. Melisandre gained 1000 experience!
+The Mountain rolled 21 defense points.
+Melisandre hit The Mountain for 344 ability damage.
+The Mountain rolled 22 defense points.
+Melisandre hit The Mountain for 343 ability damage.
+The Mountain rolled 6 defense points.
+Melisandre hit The Mountain for 359 ability damage.
+Level up: +90 Health, +45 Attack, +18 Defense
+		+225 maximum mana, +90 spell power
+Level up: +100 Health, +50 Attack, +20 Defense
+		+250 maximum mana, +100 spell power
+The Mountain died. Melisandre gained 500 experience!
+####################
+#........w.........#
+#..................#
+#.....g.....b......#
+#....z.......z.....#
+#..................#
+#.......B@B........#
+####################
+
+
+Melisandre		Health: 700		Attack damage: 280		Defense: 109
+		Level: 10		Experience: 0/500		SpellPower: 555		Mana: 1650/1650
+w
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 700		Attack damage: 280		Defense: 109
+		Level: 10		Experience: 0/500		SpellPower: 555		Mana: 1651/1650
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 9 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+Bonus "Trap" engaged in battle with Melisandre:
+Bonus "Trap"		Health: 1		Attack damage: 1		Defense: 1
+Melisandre		Health: 700		Attack damage: 280		Defense: 109
+		Level: 10		Experience: 0/500		SpellPower: 555		Mana: 1651/1650
+Bonus "Trap" rolled 0 attack points.
+Melisandre rolled 1 defense points.
+Bonus "Trap" hit Melisandre for 0 damage.
+####################
+#..................#
+#........w.........#
+#....z.g...b.......#
+#..................#
+#........@...z.....#
+#.......B.B........#
+####################
+
+
+Melisandre		Health: 700		Attack damage: 280		Defense: 109
+		Level: 10		Experience: 0/500		SpellPower: 555		Mana: 1651/1650
+w
+####################
+#..................#
+#..................#
+#...z...gwb........#
+#........@...z.....#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 700		Attack damage: 280		Defense: 109
+		Level: 10		Experience: 0/500		SpellPower: 555		Mana: 1652/1650
+e
+Melisandre cast Blizzard.
+Bonus "Trap" rolled 0 defense points.
+Melisandre hit Bonus "Trap" for 555 ability damage.
+Bonus "Trap" died. Melisandre gained 250 experience!
+Bonus "Trap" rolled 0 defense points.
+Melisandre hit Bonus "Trap" for 555 ability damage.
+Level up: +110 Health, +55 Attack, +22 Defense
+		+275 maximum mana, +110 spell power
+Bonus "Trap" died. Melisandre gained 250 experience!
+Wright rolled 8 defense points.
+Melisandre hit Wright for 657 ability damage.
+Wright died. Melisandre gained 100 experience!
+Giant-Wright rolled 39 defense points.
+Melisandre hit Giant-Wright for 626 ability damage.
+Giant-Wright rolled 6 defense points.
+Melisandre hit Giant-Wright for 659 ability damage.
+White Walker engaged in battle with Melisandre:
+White Walker		Health: 2000		Attack damage: 150		Defense: 50
+Melisandre		Health: 810		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1925/1925
+White Walker rolled 32 attack points.
+Melisandre rolled 89 defense points.
+White Walker hit Melisandre for 0 damage.
+####################
+#..................#
+#..................#
+#..z.....w.........#
+#.......g@b........#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 810		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1925/1925
+d
+Melisandre engaged in battle with Bear-Wright:
+Melisandre		Health: 810		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1926/1925
+Bear-Wright		Health: 1000		Attack damage: 75		Defense: 30
+Melisandre rolled 172 attack points.
+Bear-Wright rolled 24 defense points.
+Melisandre hit Bear-Wright for 148 damage.
+White Walker engaged in battle with Melisandre:
+White Walker		Health: 2000		Attack damage: 150		Defense: 50
+Melisandre		Health: 810		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1926/1925
+White Walker rolled 132 attack points.
+Melisandre rolled 117 defense points.
+White Walker hit Melisandre for 15 damage.
+Giant-Wright engaged in battle with Melisandre:
+Giant-Wright		Health: 215		Attack damage: 100		Defense: 40
+Melisandre		Health: 795		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1926/1925
+Giant-Wright rolled 87 attack points.
+Melisandre rolled 30 defense points.
+Giant-Wright hit Melisandre for 57 damage.
+Bear-Wright engaged in battle with Melisandre:
+Bear-Wright		Health: 852		Attack damage: 75		Defense: 30
+Melisandre		Health: 738		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1926/1925
+Bear-Wright rolled 55 attack points.
+Melisandre rolled 33 defense points.
+Bear-Wright hit Melisandre for 22 damage.
+####################
+#..................#
+#..................#
+#..z.....w.........#
+#.......g@b........#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 716		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1926/1925
+d
+Melisandre engaged in battle with Bear-Wright:
+Melisandre		Health: 716		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1927/1925
+Bear-Wright		Health: 852		Attack damage: 75		Defense: 30
+Melisandre rolled 199 attack points.
+Bear-Wright rolled 6 defense points.
+Melisandre hit Bear-Wright for 193 damage.
+White Walker engaged in battle with Melisandre:
+White Walker		Health: 2000		Attack damage: 150		Defense: 50
+Melisandre		Health: 716		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1927/1925
+White Walker rolled 13 attack points.
+Melisandre rolled 9 defense points.
+White Walker hit Melisandre for 4 damage.
+Giant-Wright engaged in battle with Melisandre:
+Giant-Wright		Health: 215		Attack damage: 100		Defense: 40
+Melisandre		Health: 712		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1927/1925
+Giant-Wright rolled 49 attack points.
+Melisandre rolled 25 defense points.
+Giant-Wright hit Melisandre for 24 damage.
+Bear-Wright engaged in battle with Melisandre:
+Bear-Wright		Health: 659		Attack damage: 75		Defense: 30
+Melisandre		Health: 688		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1927/1925
+Bear-Wright rolled 61 attack points.
+Melisandre rolled 78 defense points.
+Bear-Wright hit Melisandre for 0 damage.
+####################
+#..................#
+#..................#
+#...z....w.........#
+#.......g@b........#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 688		Attack damage: 335		Defense: 131
+		Level: 11		Experience: 100/550		SpellPower: 665		Mana: 1927/1925
+e
+Melisandre cast Blizzard.
+White Walker rolled 37 defense points.
+Melisandre hit White Walker for 628 ability damage.
+Giant-Wright rolled 31 defense points.
+Melisandre hit Giant-Wright for 634 ability damage.
+Level up: +120 Health, +60 Attack, +24 Defense
+		+300 maximum mana, +120 spell power
+Giant-Wright died. Melisandre gained 500 experience!
+White Walker rolled 41 defense points.
+Melisandre hit White Walker for 744 ability damage.
+Bear-Wright rolled 19 defense points.
+Melisandre hit Bear-Wright for 766 ability damage.
+Bear-Wright died. Melisandre gained 250 experience!
+Wright rolled 2 defense points.
+Melisandre hit Wright for 783 ability damage.
+Wright died. Melisandre gained 100 experience!
+White Walker engaged in battle with Melisandre:
+White Walker		Health: 628		Attack damage: 150		Defense: 50
+Melisandre		Health: 930		Attack damage: 395		Defense: 155
+		Level: 12		Experience: 400/600		SpellPower: 785		Mana: 2225/2225
+White Walker rolled 92 attack points.
+Melisandre rolled 151 defense points.
+White Walker hit Melisandre for 0 damage.
+####################
+#..................#
+#..................#
+#........w.........#
+#........@.........#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 930		Attack damage: 395		Defense: 155
+		Level: 12		Experience: 400/600		SpellPower: 785		Mana: 2225/2225
+w
+Melisandre engaged in battle with White Walker:
+Melisandre		Health: 930		Attack damage: 395		Defense: 155
+		Level: 12		Experience: 400/600		SpellPower: 785		Mana: 2226/2225
+White Walker		Health: 628		Attack damage: 150		Defense: 50
+Melisandre rolled 119 attack points.
+White Walker rolled 2 defense points.
+Melisandre hit White Walker for 117 damage.
+White Walker engaged in battle with Melisandre:
+White Walker		Health: 511		Attack damage: 150		Defense: 50
+Melisandre		Health: 930		Attack damage: 395		Defense: 155
+		Level: 12		Experience: 400/600		SpellPower: 785		Mana: 2226/2225
+White Walker rolled 9 attack points.
+Melisandre rolled 78 defense points.
+White Walker hit Melisandre for 0 damage.
+####################
+#..................#
+#..................#
+#........w.........#
+#........@.........#
+#..................#
+#..................#
+####################
+
+
+Melisandre		Health: 930		Attack damage: 395		Defense: 155
+		Level: 12		Experience: 400/600		SpellPower: 785		Mana: 2226/2225
+e
+Melisandre cast Blizzard.
+White Walker rolled 24 defense points.
+Melisandre hit White Walker for 761 ability damage.
+Level up: +130 Health, +65 Attack, +26 Defense
+		+325 maximum mana, +130 spell power
+Level up: +140 Health, +70 Attack, +28 Defense
+		+350 maximum mana, +140 spell power
+White Walker died. Melisandre gained 1000 experience!
+Game is finished. You won!

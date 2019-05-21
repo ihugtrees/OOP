@@ -9,12 +9,12 @@ import Utils.RandomGeneratorImpl;
 public abstract class ActiveGameUnit extends Tile {
 
     protected String name;
-    private int healthPool;
-    protected int currentHealth;
-    protected int attack;
-    protected int defence;
+    int healthPool;
+    int currentHealth;
+    int attack;
+    int defence;
 
-    public ActiveGameUnit(char tileSign, Position position, String name, int healthPool, int attack, int defence) {
+    ActiveGameUnit(char tileSign, Position position, String name, int healthPool, int attack, int defence) {
         super(tileSign, position);
         this.name = name;
         this.healthPool = healthPool;
@@ -22,14 +22,13 @@ public abstract class ActiveGameUnit extends Tile {
         this.attack = attack;
         this.defence = defence;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public int attack() {
 
-        int i= RandomGeneratorImpl.getInstance().nextInt(attack);
-        StringSubject.getInstance().notifyObservers(this.getName() + " rolled "+i+" attack points");
-        return i;
+    public int attack() {
+        return RandomGeneratorImpl.getInstance().nextInt(attack);
     }
 
     /**
@@ -37,13 +36,10 @@ public abstract class ActiveGameUnit extends Tile {
      * @return - damage done to unit
      */
     public int defend(int attack) {
-        // TODO - implement Units.ActiveGameUnit.defend
-        RandomGeneratorImpl rnd = new RandomGeneratorImpl(false);
+        int defendPoints = RandomGeneratorImpl.getInstance().nextInt(defence);
+        StringSubject.getInstance().notifyObservers(this.getName() + " rolled " + defendPoints + " defense points");
 
-        int i= RandomGeneratorImpl.getInstance().nextInt(defence);
-        StringSubject.getInstance().notifyObservers(this.getName() + " rolled "+i+" defense points");
-
-        int damage = attack-i;
+        int damage = attack - defendPoints;
         if (damage < 0)
             damage = 0;
         currentHealth = currentHealth - damage;
@@ -51,9 +47,8 @@ public abstract class ActiveGameUnit extends Tile {
     }
 
     public boolean isMovable() {
-        return true;
+        return false;
     }
 
-    //TODO:this
-    public abstract boolean checkIfDead(Gameplay gameplay);
+    public abstract void checkIfDead(Gameplay gameplay, ActiveGameUnit attacker);
 }
