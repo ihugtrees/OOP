@@ -19,6 +19,11 @@ public class EmptySpot extends Tile {
     }
 
     @Override
+    public char getTileSign() {
+        return tileSign;
+    }
+
+    @Override
     public boolean isMovable() {
         return true;
     }

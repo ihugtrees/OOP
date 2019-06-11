@@ -2,6 +2,7 @@ package Units;
 
 import Gameplay.Gameplay;
 import Gameplay.Position;
+import IO.StringSubject;
 
 public abstract class Player extends ActiveGameUnit {
 
@@ -30,8 +31,8 @@ public abstract class Player extends ActiveGameUnit {
 
     public void checkIfDead(Gameplay gameplay, ActiveGameUnit attacker) {
         if (currentHealth <= 0) {
-            gameplay.playerDied();
             tileSign = 'X';
+            gameplay.playerDied();
         }
     }
 
@@ -43,10 +44,17 @@ public abstract class Player extends ActiveGameUnit {
 
     @Override
     public void unitApproach(Gameplay gameplay, ActiveGameUnit unit) {
+        StringSubject.getInstance().notifyObservers(unit.getName() + " engaged in battle with " + getName() + ":");
+        StringSubject.getInstance().notifyObservers(unit.toString());
+        StringSubject.getInstance().notifyObservers(toString());
         defend(gameplay, unit, unit.attack(), false);
     }
 
     @Override
-    public void unitApproach(Gameplay gameplay, Player unit) {
+    public void unitApproach(Gameplay gameplay, Player unit) { /*Do nothing*/ }
+
+    @Override
+    public char getTileSign() {
+        return tileSign;
     }
 }

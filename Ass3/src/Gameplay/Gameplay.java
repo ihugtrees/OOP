@@ -3,9 +3,8 @@ package Gameplay;
 import Units.ActiveGameUnit;
 import Units.Enemy;
 import Units.Player;
-import PlayerChooser;
 import IO.StringSubject;
-import Utils.Util;
+import Utils.rangeUtil;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -16,10 +15,9 @@ public class Gameplay {
     private List<Enemy> enemies;
     private Tile[][] board;
     private List<Level> levels;
-    private Level currentLevel;
-    private int levelidx;
-    private int maxLevel;
-    private boolean isOver;
+    private int currentLevelIndex;
+    private boolean isGameOver;
+    private boolean isPlayerDead;
 
     public List<String> getAllCharacters() {
         List<String> playersToString = new LinkedList<>();
@@ -30,20 +28,20 @@ public class Gameplay {
     }
 
     public Gameplay(List<Level> levels) {
-        isOver = false;
+        isGameOver = false;
+        isPlayerDead = false;
         this.levels = levels;
         possibleCharacters = HeroGenerator.getHeroes();
-        levelidx = 0;
-        maxLevel = levels.size();
+        currentLevelIndex = 0;
     }
 
     public void startGame(int playerId) {
-        player = possibleCharacters.get(playerId);
+        player = possibleCharacters.get(playerId - 1);
         loadLevel();
     }
 
     private void loadLevel() {
-        currentLevel = levels.get(levelidx);
+        Level currentLevel = levels.get(currentLevelIndex);
         board = currentLevel.getBoard();
         enemies = currentLevel.getEnemies();
 
@@ -56,10 +54,6 @@ public class Gameplay {
 
     }
 
-    /**
-     * @param playerMove
-     */
-
     public void turn(char playerMove) throws Exception {
         Position playerPosition = player.getPosition();
         player.turn();
@@ -68,37 +62,51 @@ public class Gameplay {
             case 'w':
                 playerMove(playerPosition.getX(), playerPosition.getY() - 1);
                 break;
+
             case 's':
                 playerMove(playerPosition.getX(), playerPosition.getY() + 1);
                 break;
+
             case 'a':
                 playerMove(playerPosition.getX() - 1, playerPosition.getY());
                 break;
+
             case 'd':
                 playerMove(playerPosition.getX() + 1, playerPosition.getY());
                 break;
+
             case 'e':
                 playerAbility();
                 break;
+
             case 'q':
                 break;
+
             default:
                 throw new Exception("wrong input");
         }
-        continueEnemyTurn();
+
+        if (!isPlayerDead())
+            continueEnemyTurn();
     }
 
     private void continueEnemyTurn() {
         for (Enemy enemy : enemies) {
             enemy.turn(player.getPosition(), this);
+            if (isPlayerDead())
+                break;
         }
     }
 
-    /**
-     * @param
-     * @param x
-     * @param y
-     */
+    public boolean isPlayerDead() {
+        return isPlayerDead;
+    }
+
+    public void playerDied() {
+        isGameOver = true;
+        isPlayerDead = true;
+    }
+
     private void playerMove(int x, int y) {
         Tile t = board[x][y];
         t.unitApproach(this, player);
@@ -108,10 +116,6 @@ public class Gameplay {
         player.playerAbility(this);
     }
 
-    /**
-     * @param empty
-     * @param unit
-     */
     void unitToEmpty(EmptySpot empty, ActiveGameUnit unit) {
         Position tmp = empty.getPosition();
         empty.setPosition(unit.getPosition());
@@ -120,30 +124,21 @@ public class Gameplay {
         board[unit.getPosition().getX()][unit.getPosition().getY()] = unit;
     }
 
-    /**
-     * @param x
-     * @param y
-     */
     public void monsterMove(ActiveGameUnit monster, int x, int y) {
         Tile moveTo = board[x][y];
         moveTo.unitApproach(this, monster);
     }
 
-
     public void setPlayer(Player player) {
         this.player = player;
     }
 
-    /**
-     * @param radius
-     * @param position
-     */
     public List<Tile> getEmptyTileInRadius(int radius, Position position) {
         LinkedList<Tile> emptyTiles = new LinkedList<>();
         for (int x = position.getX() - radius < 0 ? 0 : position.getX() - radius;
              x < board.length && x < position.getX() + radius; x++) {
             for (int y = position.getY() - radius < 0 ? 0 : position.getY() - radius;
-                 y < board.length && y < position.getY() + radius; y++) {
+                 y < board[x].length && y < position.getY() + radius; y++) {
                 if (board[x][y].isMovable()) {
                     emptyTiles.add(board[x][y]);
                 }
@@ -156,34 +151,31 @@ public class Gameplay {
         return player.toString();
     }
 
-    public boolean isOver() {
-        return isOver;
+    public boolean isGameOver() {
+        return isGameOver;
     }
 
     public String boardToString() {
         String boardString = "";
         for (int y = 0; y < board[0].length; y++) {
             for (int x = 0; x < board.length; x++) {
-                boardString += board[x][y].tileSign;
+                boardString += board[x][y].getTileSign();
             }
             boardString += '\n';
         }
         return boardString;
     }
 
-    public void playerDied() {
-        isOver = true;
-    }
-
     public List<Enemy> enemiesInRange(Position position, int radius) {
         LinkedList<Enemy> monsters = new LinkedList<>();
         for (Enemy e : enemies)
-            if (Util.isInRange(e.getPosition(), position, radius))
+            if (rangeUtil.isInRange(e.getPosition(), position, radius))
                 monsters.add(e);
         return monsters;
     }
 
     public void handlePlayerKilledEnemy(ActiveGameUnit attacker, Enemy enemy, int exp) {
+        StringSubject.getInstance().notifyObservers(enemy.getName() + " died. " + attacker.getName() + " gained " + exp + " experience!");
         player.addExperience(exp);
         Position pos = enemy.getPosition();
         board[pos.getX()][pos.getY()] = new EmptySpot('.', pos);
@@ -193,10 +185,10 @@ public class Gameplay {
     }
 
     private void nextLevel() {
-        levelidx++;
-        if (levelidx < levels.size())
+        currentLevelIndex++;
+        if (currentLevelIndex < levels.size())
             loadLevel();
         else
-            isOver = true;
+            isGameOver = true;
     }
 }

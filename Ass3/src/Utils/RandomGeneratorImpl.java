@@ -2,22 +2,28 @@ package Utils;
 
 import java.util.Random;
 
-public class RandomGeneratorImpl implements RandomGenerator {
+public final class RandomGeneratorImpl implements RandomGenerator {
 
-    private static Random rnd = new Random();
-    private static boolean isD;
+    private static RandomGeneratorImpl generator;
 
-    public RandomGeneratorImpl(boolean d){
-        isD = d;
+    private Random rnd = new Random();
+    private boolean isD;
+
+    private RandomGeneratorImpl() {
     }
-    private static RandomGenerator ourInstance = new RandomGeneratorImpl(false);
 
-    public static RandomGenerator getInstance() {
-        return ourInstance;
+    public static RandomGeneratorImpl getInstance() {
+        if (generator == null)
+            generator = new RandomGeneratorImpl();
+        return generator;
+    }
+
+    public void setDeterministic(boolean isD) {
+        this.isD = isD;
     }
 
     public int nextInt(int n) {
-        if(!isD)
+        if (!isD)
             return rnd.nextInt(n);
         else
             return 0;

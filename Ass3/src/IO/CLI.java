@@ -11,12 +11,11 @@ public class CLI {
         this.actionReader = actionReader;
         this.gameplay = gameplay;
         StringSubject.getInstance().addObserver(System.out::println);
-
     }
 
     public void startGame() {
         StringSubject.getInstance().notifyObservers("Select player:");
-        int i = 0;
+        int i = 1;
         for (String s : gameplay.getAllCharacters()) {
             StringSubject.getInstance().notifyObservers(i + ". " + s);
             i++;
@@ -28,7 +27,7 @@ public class CLI {
         StringSubject.getInstance().notifyObservers(gameplay.getPlayerStat());
         StringSubject.getInstance().notifyObservers("Use w/s/a/d to move.\n" +
                 "Use e for special ability or q to pass.");
-        while (!gameplay.isOver()) {
+        while (!gameplay.isGameOver()) {
             StringSubject.getInstance().notifyObservers(gameplay.boardToString());
             StringSubject.getInstance().notifyObservers(gameplay.getPlayerStat());
             try {
@@ -37,5 +36,10 @@ public class CLI {
                 StringSubject.getInstance().notifyObservers(e.getMessage());
             }
         }
+        StringSubject.getInstance().notifyObservers(gameplay.boardToString());
+        if (gameplay.isPlayerDead())
+            StringSubject.getInstance().notifyObservers("Game is finished. You Died!");
+        else
+            StringSubject.getInstance().notifyObservers("Game is finished. You Won!");
     }
 }
