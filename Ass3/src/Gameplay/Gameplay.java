@@ -3,7 +3,6 @@ package Gameplay;
 import Units.ActiveGameUnit;
 import Units.Enemy;
 import Units.Player;
-import PlayerChooser;
 import IO.StringSubject;
 import Utils.Util;
 

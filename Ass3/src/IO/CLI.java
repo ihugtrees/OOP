@@ -11,7 +11,6 @@ public class CLI {
         this.actionReader = actionReader;
         this.gameplay = gameplay;
         StringSubject.getInstance().addObserver(System.out::println);
-
     }
 
     public void startGame() {
@@ -21,6 +20,8 @@ public class CLI {
             StringSubject.getInstance().notifyObservers(i + ". " + s);
             i++;
         }
+
+
         String player = actionReader.nextAction();
 
         gameplay.startGame(Integer.valueOf(player));
