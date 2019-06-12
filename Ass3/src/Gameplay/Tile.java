@@ -31,7 +31,5 @@ public abstract class Tile {
         this.position = position;
     }
 
-    public char getTileSign() {
-        return tileSign;
-    }
+    public abstract char getTileSign();
 }

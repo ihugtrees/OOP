@@ -31,12 +31,13 @@ public class Warrior extends Player {
         remaining = 0;
         healthPool += (5 * level);
         this.defence += level;
+        StringSubject.getInstance().notifyObservers("Level up: +" + health + (5 * level) + " Health, +" + attack + " Attack, +" + (defence + level) + " Defence");
     }
 
     public String toString() {
-        return "" + this.name + "\t\tHealth: " + this.currentHealth + "\tAttack damage: " + this.attack +
-                "\tDefense: " + this.defence + "\n\t\tLevel: " + level + "\tExperience: " + experience + "/" + level * 50 +
-                "\tAbility cooldown: " + cooldown + "\tRemaining: " + remaining;
+        return name + "\t\tHealth: " + currentHealth + "\t\tAttack damage: " + attack +
+                "\t\tDefense: " + defence + "\n\t\tLevel: " + level + "\t\tExperience: " + experience + "/" + level * 50 +
+                "\t\tAbility cooldown: " + cooldown + "\t\tRemaining: " + remaining;
     }
 
     @Override

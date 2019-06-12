@@ -21,6 +21,11 @@ public class Wall extends Tile {
     }
 
     @Override
+    public char getTileSign() {
+        return tileSign;
+    }
+
+    @Override
     public boolean isMovable() {
         return false;
     }

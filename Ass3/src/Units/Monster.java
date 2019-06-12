@@ -13,8 +13,13 @@ public class Monster extends Enemy {
     }
 
     @Override
+    public char getTileSign() {
+        return tileSign;
+    }
+
+    @Override
     public void turn(Position playerPosition, Gameplay gameplay) {
-        if (Util.isInRange(playerPosition, getPosition(), visionRange)) {
+        if (rangeUtil.isInRange(playerPosition, getPosition(), visionRange)) {
             int dx = getPosition().getX() - playerPosition.getX();
             int dy = getPosition().getY() - playerPosition.getY();
             if (Math.abs(dx) > Math.abs(dy)) {

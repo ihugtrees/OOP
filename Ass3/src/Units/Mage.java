@@ -31,6 +31,7 @@ public class Mage extends Player {
         if (currentMana < cost)
             System.out.println("Not enough mana");
         else {
+            StringSubject.getInstance().notifyObservers(getName() + " cast Blizzard.");
             currentMana = currentMana - cost;
             List<Enemy> monstersInRange = gameplay.enemiesInRange(getPosition(), range);
             if (!monstersInRange.isEmpty()) {
@@ -46,12 +47,13 @@ public class Mage extends Player {
         manaPool += 25 * level;
         currentMana = Math.min(currentMana + (manaPool / 4), manaPool);
         spellPower += 10 * level;
+        StringSubject.getInstance().notifyObservers("Level up: +" + health + " Health, +" + attack + " Attack, +" + defence +" Defence\n\t\t+" + (25 * level) + " maximum mana, +" + (10 * level) + " spell power");
     }
 
     public String toString() {
-        return "" + this.name + "\t\tHealth: " + this.currentHealth + "\tAttack damage: " + this.attack +
-                "\tDefense: " + this.defence + "\n\t\tLevel: " + level + "\tExperience: " + experience + "/" + level * 50 +
-                "\tSpellPower: " + spellPower + "\tMana: " + currentMana + "/" + manaPool;
+        return name + "\t\tHealth: " + currentHealth + "\t\tAttack damage: " + attack +
+                "\t\tDefense: " + defence + "\n\t\tLevel: " + level + "\t\tExperience: " + experience + "/" + level * 50 +
+                "\t\tSpellPower: " + spellPower + "\t\tMana: " + currentMana + "/" + manaPool;
     }
 
     @Override
