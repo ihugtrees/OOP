@@ -44,6 +44,8 @@ public class Gameplay {
         Level currentLevel = levels.get(currentLevelIndex);
         board = currentLevel.getBoard();
         enemies = currentLevel.getEnemies();
+        if(enemies.isEmpty())
+            nextLevel();
 
         player.setPosition(currentLevel.getPlayerPosition());
         if (board[player.getPosition().getX()][player.getPosition().getY()] == null) {
