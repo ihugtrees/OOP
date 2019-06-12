@@ -31,7 +31,7 @@ public class Warrior extends Player {
         remaining = 0;
         healthPool += (5 * level);
         this.defence += level;
-        StringSubject.getInstance().notifyObservers("Level up: +" + health + (5 * level) + " Health, +" + attack + " Attack, +" + (defence + level) + " Defence");
+        StringSubject.getInstance().notifyObservers("Level up: +" + (health + (5 * level)) + " Health, +" + attack + " Attack, +" + (defence + level) + " Defence");
     }
 
     public String toString() {
