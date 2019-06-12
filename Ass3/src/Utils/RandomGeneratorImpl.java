@@ -12,9 +12,9 @@ public final class RandomGeneratorImpl implements RandomGenerator {
 
     private Random rnd = new Random();
     private boolean isD;
-    private File randomNumbers;
     private String nextDetMove;
     BufferedReader br;
+    boolean test;
 
     private RandomGeneratorImpl() {
 
@@ -28,7 +28,6 @@ public final class RandomGeneratorImpl implements RandomGenerator {
 
     public void setDeterministic(boolean isD, File randomNumbers) {
         this.isD = isD;
-        this.randomNumbers = randomNumbers;
         try {
             this.br = new BufferedReader(new FileReader(randomNumbers));
         } catch (FileNotFoundException e) {
@@ -38,6 +37,8 @@ public final class RandomGeneratorImpl implements RandomGenerator {
     }
 
     public int nextInt(int n) {
+        if (test)
+            return 5;
         if (!isD)
             return rnd.nextInt(n);
         else {
@@ -50,5 +51,9 @@ public final class RandomGeneratorImpl implements RandomGenerator {
                 return -1;
             }
         }
+    }
+
+    public void setTest() {
+        test = true;
     }
 }
