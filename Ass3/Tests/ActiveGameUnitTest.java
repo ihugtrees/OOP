@@ -1,6 +1,5 @@
 import Gameplay.Gameplay;
 import Gameplay.Level;
-import Units.ActiveGameUnit;
 import Utils.RandomGeneratorImpl;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +25,7 @@ public class ActiveGameUnitTest {
 
     @Test
     public void defend() {
-        lvl.add( new Level(s+"/Tests/mini1.txt"));
+        lvl.add( new Level(s + "/Ass3/Tests/mini1.txt"));
         gameplay = new Gameplay(lvl);
         gameplay.startGame(1);
         try {
@@ -39,7 +38,7 @@ public class ActiveGameUnitTest {
 
     @Test
     public void noMonsterTest() {
-        lvl.add( new Level(s+"/Tests/mini2.txt"));
+        lvl.add( new Level(s+"/Ass3/Tests/mini2.txt"));
         gameplay = new Gameplay(lvl);
         gameplay.startGame(1);
         try {
